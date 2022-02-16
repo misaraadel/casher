@@ -1,0 +1,45 @@
+@media (max-width: 900px) {
+    h1,h2,h3 {
+        font-size: 18px !important;
+    }
+    h4 {
+        font-size: 14px !important;
+    }
+    h5, h6 , .font-size-15{
+        font-size: 12px !important;
+    }
+    p , a , li , button {
+        font-size: 11px !important;
+    }
+    .analysis .card-title{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 20px 0px !important;
+    }
+    .analysis .main-chart , 
+    .analysis .main-chart li h3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content:center ;
+        width: 100%;
+    }
+    .analysis .dropdown-content{
+        margin-bottom: 15px !important;
+    }
+    .nav-tabs{
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 20px 0px;
+    }
+    .nav-tabs .nav-link{
+        min-width: 120px;
+        text-align: center;
+    }
+}
