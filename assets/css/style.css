@@ -736,6 +736,17 @@ a {
           margin-inline-end: 2px;
 }
 
+.dark-color {
+  color: #2A2A2A;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dark-color i {
+  -webkit-margin-end: 2px;
+          margin-inline-end: 2px;
+}
+
 .box, .card {
   width: 100%;
   padding: 20px 15px;
@@ -1060,6 +1071,15 @@ a {
   }
   .page-title-box h4 {
     margin-bottom: 20px !important;
+  }
+  .table-contain .table th {
+    font-size: 13px !important;
+  }
+  .table-contain .table td {
+    font-size: 12px !important;
+  }
+  .table-contain .table th, .table-contain .table td {
+    min-width: 190px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

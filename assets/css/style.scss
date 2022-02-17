@@ -15,6 +15,15 @@
         margin-inline-end: 2px;
     }
 }
+.dark-color{
+    color: #2A2A2A;
+    font-size: 14px;
+    font-weight: 500;
+
+    i{
+        margin-inline-end: 2px;
+    }
+}
 .box , .card{
     width: 100%;
     padding: 20px 15px;
@@ -270,6 +279,22 @@
 
         h4{
             margin-bottom: 20px !important;
+        }
+    }
+
+    .table-contain {
+        .table {
+            th {
+                font-size: 13px !important;
+            }
+
+            td {
+                font-size: 12px !important;
+            }
+
+            th, td {
+                min-width: 190px !important;
+            }
         }
     }
 }

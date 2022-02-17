@@ -277,108 +277,107 @@
               <div class="col-12 mb-4">
                 <div class="page-title-box d-flex align-items-center justify-content-between">
                   <h4 class="mb-0 primary-color">
-                    <i class="fas fa-wallet"></i>
+                    <i class="fa-solid fa-utensils"></i>
 
-                    طرق الدفع
+                    طاولات الطعام
                   </h4>
-
-                  <a href="add_paymentmethod.html" class="btn-primary-shape small-btn">
-                    <i class="fas fa-pen"></i>
-
-                    <span>
-                      اضافة جديد 
-                    </span>
-                  </a>
                 </div>
               </div>
 
               <div class="col-12">
-                <div class="table-contain">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>
-                          #
-                        </th>
+                <form class="form-contain">
+                  <div class="row">
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-dollar-sign"></i>
+    
+                          <span>
+                            نقاط البيع
+                          </span>
+                        </label>
 
-                        <th>
-                          العنوان
-                        </th>
+                        <select class="form-control">
+                          <option value="">كاشير مطعم</option>
+                        </select>
+                      </div>
+                    </div>
 
-                        <th>
-                          تعديل | حذف
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          1
-                        </td>
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-chair"></i>
+    
+                          <span>
+                            اسم الطاوله
+                          </span>
+                        </label>
 
-                        <td>
-                          نقدي
-                        </td>
+                        <input type="text" class="form-control" placeholder="اكتب هنا" />
+                      </div>
+                    </div>
 
-                        <td>
-                          <div class="button-contain">
-                            <a href="paymentmethod_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-users"></i>
+    
+                          <span>
+                            عدد الافراد
+                          </span>
+                        </label>
 
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
+                        <input type="text" class="form-control" placeholder="اكتب هنا" />
+                      </div>
+                    </div>
 
-                      <tr>
-                        <td>
-                          2
-                        </td>
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-check"></i>
+    
+                          <span>
+                            حالة الطاولة
+                          </span>
+                        </label>
 
-                        <td>
-                          شبكة
-                        </td>
+                        <select class="form-control">
+                          <option value="">
+                            مفعل
+                          </option>
 
-                        <td>
-                          <div class="button-contain">
-                            <a href="paymentmethod_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
+                          <option value="">
+                            غير مفعل
+                          </option>
+                        </select>
+                      </div>
+                    </div>
 
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
+                    <div class="col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-circle-info"></i>
+    
+                          <span>
+                            معلومات اخري
+                          </span>
+                        </label>
+    
+                        <textarea class="form-control textarea" placeholder="اكتب هنا"  cols="30" rows="10"></textarea>
+                      </div>
+                    </div>
 
-                      <tr>
-                        <td>
-                          3
-                        </td>
+                    <div class="col-12 mt-3">
+                      <button type="button" class="btn-primary-shape" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fas fa-pen"></i>
 
-                        <td>
-                          اجل
-                        </td>
-
-                        <td>
-                          <div class="button-contain">
-                            <a href="paymentmethod_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
-
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                        <span>
+                          اضافة
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -393,7 +392,7 @@
             <img src="assets/images/check_icon.svg" alt="" />
 
             <h4>
-              تم تعديل البيانات بنجاح
+              تم اضافة البيانات بنجاح
             </h4>
           </div>
         </div>

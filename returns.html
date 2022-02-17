@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>
-      كاشير   
+      كاشير
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="..." name="description" />
@@ -181,7 +181,7 @@
                         </a>
                       </li>
 
-                     <li>
+                      <li>
                         <a href="returns.html">
                           المرتجعات
                         </a>
@@ -277,12 +277,12 @@
               <div class="col-12 mb-4">
                 <div class="page-title-box d-flex align-items-center justify-content-between">
                   <h4 class="mb-0 primary-color">
-                    <i class="fas fa-wallet"></i>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
 
-                    طرق الدفع
+                    المرتجعات
                   </h4>
 
-                  <a href="add_paymentmethod.html" class="btn-primary-shape small-btn">
+                  <a href="add_return.html" class="btn-primary-shape small-btn">
                     <i class="fas fa-pen"></i>
 
                     <span>
@@ -293,6 +293,106 @@
               </div>
 
               <div class="col-12">
+                <form class="form-contain">
+                  <div class="row">
+                    <div class="col-lg-4 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-calendar-days"></i>
+    
+                          <span>
+                         تاريخ الارتجاع
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اختر هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-calendar-days"></i>
+    
+                          <span>
+                            تاريخ الطلب
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اختر هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-calendar-days"></i>
+    
+                          <span>
+                            مرتجعات من
+                          </span>
+                        </label>
+
+                        <input type="text" class="form-control" placeholder="اختر هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-3">
+                      <div class="form-group">
+                        <label> 
+                          <i class="fa-solid fa-calendar-days"></i>
+    
+                          <span>
+                           مرتجعات الي
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اختر هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-arrow-down-1-9"></i>
+    
+                          <span>
+                            رقم المرتجع
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اكتب هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa-solid fa-arrow-down-1-9"></i>
+    
+                          <span>
+                           رقم الطلب
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اكتب هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                      <button type="button" class="btn-primary-shape" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <span>
+                          بحث
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-12 mt-4">
                 <div class="table-contain">
                   <table class="table">
                     <thead>
@@ -302,11 +402,31 @@
                         </th>
 
                         <th>
-                          العنوان
+                          نقطة البيع
                         </th>
 
                         <th>
-                          تعديل | حذف
+                          تاريخ الجلسة
+                        </th>
+
+                        <th>
+                          تاريخ الطلب
+                        </th>
+
+                        <th>
+                          تاريخ   الارتجاع
+                        </th>
+
+                        <th>
+                          قمية المرتجع
+                        </th>
+
+                        <th>
+                          انشئ بواسطة
+                        </th>
+
+                        <th>
+                          طباعة | حذف
                         </th>
                       </tr>
                     </thead>
@@ -317,57 +437,33 @@
                         </td>
 
                         <td>
-                          نقدي
+                         كاشير مطعم
+                        </td>
+
+                        <td>
+                          2022-01-06	
+                        </td>
+
+                        <td>
+                          2022-01-06	
+                        </td>
+
+                        <td>
+                          2022-01-06	
+                        </td>
+
+                        <td>
+                          1390.5
+                        </td>
+
+                        <td>
+                          admin
                         </td>
 
                         <td>
                           <div class="button-contain">
-                            <a href="paymentmethod_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
-
                             <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          2
-                        </td>
-
-                        <td>
-                          شبكة
-                        </td>
-
-                        <td>
-                          <div class="button-contain">
-                            <a href="paymentmethod_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
-
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          3
-                        </td>
-
-                        <td>
-                          اجل
-                        </td>
-
-                        <td>
-                          <div class="button-contain">
-                            <a href="paymentmethod_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
+                              <img src="assets/images/print.svg" alt="">
                             </a>
 
                             <a href="#">
@@ -393,7 +489,7 @@
             <img src="assets/images/check_icon.svg" alt="" />
 
             <h4>
-              تم تعديل البيانات بنجاح
+              جاري البحث  عن البيانات المطلوبة
             </h4>
           </div>
         </div>
