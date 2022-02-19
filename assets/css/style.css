@@ -905,6 +905,98 @@ a {
   color: #A2A2A2 !important;
 }
 
+.form-contain .wrapper {
+  width: 100%;
+  padding: 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.form-contain .wrapper .radio-check {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #008BD2;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-contain .wrapper .radio-check::after {
+  content: '\f00c';
+  width: 25px;
+  height: 25px;
+  background-color: #008BD2;
+  border-radius: 50%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  top: 0;
+  left: 0;
+}
+
+.form-contain .wrapper .radio-check:checked::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.form-contain .wrapper .radio-title {
+  color: #2A2A2A;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px 10px 0px 0px;
+}
+
+.form-contain .wrapper .radio-title span {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-contain .wrapper .radio-title span.title {
+  color: #2A2A2A !important;
+}
+
+.form-contain .wrapper .radio-title span.secondary-color {
+  color: #BEBEBE !important;
+}
+
+.form-contain .wrapper:last-child {
+  border: none;
+}
+
 .btn-primary-shape {
   width: 50%;
   margin: 0px auto;
@@ -1032,6 +1124,166 @@ a {
      object-fit: contain;
   -webkit-margin-end: 20px;
           margin-inline-end: 20px;
+}
+
+.profile-card {
+  width: 100%;
+  padding: 20px 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 139, 210, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 139, 210, 0.1);
+  border-radius: 10px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.profile-card .image-content {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 139, 210, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 139, 210, 0.1);
+  top: -50px;
+  left: calc(50% - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-card .image-content img {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.profile-card .content {
+  width: 100%;
+  margin-top: 50px !important;
+}
+
+.profile-card .content h4 {
+  color: #2A2A2A;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0px;
+}
+
+.profile-card .content .data {
+  width: 100%;
+  list-style: none;
+  margin: 20px 0px;
+  padding: 0px;
+}
+
+.profile-card .content .data li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-card .content .data li:last-child {
+  margin: 0px !important;
+}
+
+.profile-card .content .data li i {
+  color: #008BD2;
+  font-size: 18px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.profile-card .content .data li span {
+  color: #2A2A2A;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.profile-card .content .btn-contain {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.profile-card .content .btn-contain a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+}
+
+.profile-card .content .btn-contain a:last-child {
+  margin: 0px !important;
+}
+
+.profile-card .content .btn-contain a i {
+  font-size: 18px;
+  color: #7C0E6F;
+}
+
+.profile-card .content .btn-contain a img {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.profile-card .content .btn-contain a.primary-btn {
+  background-color: rgba(0, 139, 210, 0.1);
+}
+
+.profile-card .content .btn-contain a.second-btn {
+  background-color: rgba(124, 14, 111, 0.1);
+}
+
+.profile-card .content .btn-contain a.delete-btn {
+  background-color: rgba(209, 31, 31, 0.1);
+}
+
+.profile-card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .navbar-brand-box {
