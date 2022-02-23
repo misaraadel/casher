@@ -25,7 +25,7 @@
   0% {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
-    opacity: 0;
+    opacity: 1;
   }
   50% {
     -webkit-transform: scale3d(0.8, 0.8, 0.8);
@@ -43,7 +43,7 @@
   0% {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
-    opacity: 0;
+    opacity: 1;
   }
   50% {
     -webkit-transform: scale3d(0.8, 0.8, 0.8);
@@ -1314,6 +1314,966 @@ a {
   background-color: #2A2A2A !important;
 }
 
+.casher-nav {
+  width: 100%;
+  padding: 20px 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.04);
+}
+
+.casher-nav .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.casher-nav .content .close-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #D11F1F;
+  border-radius: 6px;
+  display: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.casher-nav .content .close-btn img {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.casher-nav .content .close-btn.appear-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.casher-nav .content::-webkit-scrollbar-thumb, .casher-nav .content::-webkit-scrollbar-track, .casher-nav .content::-webkit-scrollbar {
+  width: 0px !important;
+  background: transparent !important;
+}
+
+.casher-nav .content .logo-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.casher-nav .content .logo-contain .brand-name {
+  width: 100px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.casher-nav .content .logo-contain .large-btn {
+  width: 120px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #008BD2;
+  border-radius: 6px;
+  color: #008BD2;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  -webkit-margin-start: 21px;
+          margin-inline-start: 21px;
+}
+
+.casher-nav .content .logo-contain .large-btn:hover {
+  background-color: #008BD2;
+  color: #fff;
+}
+
+.casher-nav .content .logo-contain .small-btn {
+  width: 47px;
+  height: 47px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-margin-start: 6px;
+          margin-inline-start: 6px;
+}
+
+.casher-nav .content .logo-contain .small-btn img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.casher-nav .content .logo-contain .small-btn.blue-bk {
+  background-color: #008BD2;
+}
+
+.casher-nav .content .logo-contain .small-btn.red-bk {
+  background-color: #D11F1F;
+}
+
+.casher-nav .content .logo-contain .small-btn:hover img {
+  -webkit-animation: fadeInLeft .5s linear;
+          animation: fadeInLeft .5s linear;
+}
+
+.casher-nav .content .number-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-padding-start: 64px;
+          padding-inline-start: 64px;
+}
+
+.casher-nav .content .number-contain .number-btn {
+  width: 118px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.casher-nav .content .number-contain .number-btn .num {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 17px;
+  color: #fff;
+}
+
+.casher-nav .content .number-contain .number-btn .count {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+
+.casher-nav .content .number-contain .number-btn.blue-bk {
+  background-color: #008BD2;
+}
+
+.casher-nav .content .number-contain .number-btn.blue-bk .num {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.casher-nav .content .number-contain .number-btn.blue-bk .count {
+  color: #fff;
+}
+
+.casher-nav .content .number-contain .number-btn.gray-bk {
+  background-color: #EFEFEF;
+}
+
+.casher-nav .content .number-contain .number-btn.gray-bk .num {
+  background-color: #c4c4c4;
+}
+
+.casher-nav .content .number-contain .number-btn.gray-bk .count {
+  color: #A2A2A2;
+}
+
+.casher-nav .content .number-contain .add-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-margin-start: 7px;
+          margin-inline-start: 7px;
+  width: 105px;
+}
+
+.casher-nav .content .number-contain .add-more img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.casher-nav .content .number-contain .add-more span {
+  color: #008BD2;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 19px;
+}
+
+.menu {
+  width: 100%;
+  background-color: #FBF8F8;
+}
+
+.menu .menu-list {
+  width: 100%;
+  padding-top: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #fff;
+}
+
+.menu .menu-list .data-list {
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.menu .menu-list .data-list::-webkit-scrollbar-thumb, .menu .menu-list .data-list::-webkit-scrollbar-track, .menu .menu-list .data-list::-webkit-scrollbar {
+  width: 0px !important;
+  background: transparent !important;
+}
+
+.menu .menu-list .data-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 25px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.menu .menu-list .data-list li:hover {
+  background-color: rgba(0, 146, 137, 0.04);
+}
+
+.menu .menu-list .data-list li .content h4 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 19px;
+  margin-bottom: 7px;
+}
+
+.menu .menu-list .data-list li .content span {
+  font-size: 13px;
+  padding: 0px 10px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #A2A2A2;
+}
+
+.menu .menu-list .data-list li .content span.border-shape {
+  border-left: 1px solid #A2A2A2;
+  border-right: 1px solid #A2A2A2;
+}
+
+.menu .menu-list .data-list li .price {
+  color: #008BD2;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  margin: 0px;
+}
+
+.menu .menu-list .bill-contain {
+  width: 100%;
+  padding: 0px 20px;
+  background-color: #fff;
+}
+
+.menu .menu-list .bill-contain .bill-shape {
+  width: 100%;
+  background-color: #008BD2;
+  border-radius: 6px;
+  padding: 0px 3px 3px;
+}
+
+.menu .menu-list .bill-contain .bill-shape li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0px 10px;
+}
+
+.menu .menu-list .bill-contain .bill-shape li:first-child {
+  padding-top: 20px;
+}
+
+.menu .menu-list .bill-contain .bill-shape li:last-child {
+  margin: 0px !important;
+}
+
+.menu .menu-list .bill-contain .bill-shape li span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.menu .menu-list .bill-contain .bill-shape li span:last-child {
+  font-weight: 900;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.total {
+  padding: 13px 18px !important;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #FECC00;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.total span {
+  color: #000000;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate {
+  width: 100%;
+  background-color: #fff;
+  margin: 0px !important;
+  padding: 20px 18px 10px !important;
+  border-radius: 6px !important;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .plus-men-buttons {
+  width: 50px;
+  height: 110px;
+  background-color: #7C0E6F;
+  border-radius: 6px;
+  padding: 10px 8px;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .plus-men-buttons a {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .plus-men-buttons a img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .plus-men-buttons a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .plus-men-buttons a:last-child::after {
+  display: none;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .plus-men-buttons a:hover img {
+  -webkit-animation: pulse .3s linear;
+          animation: pulse .3s linear;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .delete-product {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #D11F1F;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .delete-product img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .delete-product:hover img {
+  -webkit-animation: pulse .3s linear;
+          animation: pulse .3s linear;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .flex-number {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .number-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #008BD2;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #008BD2;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  border-radius: 6px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .number-btn:hover {
+  background-color: #008BD2;
+  color: #fff;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .equal-btn {
+  width: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 6px;
+  background-color: #008BD2;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  margin-bottom: 10px;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .equal-btn img {
+  width: 12px;
+  height: 12px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .equal-btn:hover img {
+  -webkit-animation: pulse .3s linear;
+          animation: pulse .3s linear;
+}
+
+.menu .menu-list .payment {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+.menu .menu-list .button-contain {
+  width: 100%;
+  padding: 24px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.menu .menu-list .button-contain .small-btn {
+  width: 65px;
+  height: 47px;
+  border: 1px solid #008BD2;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  position: relative;
+  z-index: 9;
+  color: #008BD2;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  overflow: hidden;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.menu .menu-list .button-contain .small-btn::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #008BD2;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  z-index: -1;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.menu .menu-list .button-contain .small-btn:hover {
+  color: #fff;
+  border-color: transparent !important;
+}
+
+.menu .menu-list .button-contain .small-btn:hover::after {
+  width: 100%;
+}
+
+.menu .menu-list .button-contain .large-btn {
+  width: 140px;
+  height: 47px;
+  background-color: #008BD2;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .menu-list .button-contain .large-btn img {
+  width: 24px;
+  height: 24px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 4px;
+          margin-inline-end: 4px;
+}
+
+.menu .menu-list .button-contain .large-btn span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.menu .menu-list .button-contain .large-btn:hover img {
+  -webkit-animation: pulse .3s linear;
+          animation: pulse .3s linear;
+}
+
+.menu .menu-list .add-to-ketchine {
+  width: 100%;
+  height: 47px;
+  background-color: #FECC00;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .proucts-contain {
+  width: 100%;
+  padding: 25px 0px;
+  height: 123vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.menu .proucts-contain::-webkit-scrollbar-thumb, .menu .proucts-contain::-webkit-scrollbar-track, .menu .proucts-contain::-webkit-scrollbar {
+  width: 0px !important;
+  background: transparent !important;
+}
+
+.menu .proucts-contain .nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border: 0px !important;
+}
+
+.menu .proucts-contain .nav::-webkit-scrollbar-thumb, .menu .proucts-contain .nav::-webkit-scrollbar-track, .menu .proucts-contain .nav::-webkit-scrollbar {
+  width: 0px !important;
+  background: transparent !important;
+}
+
+.menu .proucts-contain .nav .nav-item {
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+
+.menu .proucts-contain .nav .nav-item .nav-link {
+  width: 120px;
+  height: 47px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.menu .proucts-contain .nav .nav-item .nav-link.blue-bk {
+  background-color: #008BD2;
+}
+
+.menu .proucts-contain .nav .nav-item .nav-link.purble-bk {
+  background-color: #7C0E6F;
+}
+
+.menu .proucts-contain .nav .nav-item .nav-link.gray-bk {
+  background-color: #757474;
+}
+
+.menu .proucts-contain .nav .nav-item .nav-link.semi-gray-bk {
+  background-color: #959594;
+}
+
+.menu .proucts-contain .nav .nav-item .nav-link.yellow-bk {
+  background-color: #F09B0C;
+}
+
+.menu .proucts-contain .nav .nav-item .nav-link.green-bk {
+  background-color: #469248;
+}
+
+.menu .proucts-contain .product-box {
+  width: 100%;
+  border: 1px solid #FBF8F8;
+  background-color: #fff;
+  padding: 15px 6px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .proucts-contain .product-box img {
+  width: 120px;
+  height: 80px;
+  margin: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.menu .proucts-contain .product-box h4 {
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  margin: 10px 0px;
+}
+
+.menu .proucts-contain .product-box p {
+  color: #A2A2A2;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.menu .proucts-contain .product-box .button-contain {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.menu .proucts-contain .product-box .button-contain::-webkit-scrollbar-thumb, .menu .proucts-contain .product-box .button-contain::-webkit-scrollbar-track, .menu .proucts-contain .product-box .button-contain::-webkit-scrollbar {
+  width: 0px !important;
+  background: transparent !important;
+}
+
+.menu .proucts-contain .product-box .button-contain a {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #008BD2;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.menu .proucts-contain .product-box .button-contain a:last-child {
+  margin: 0px;
+}
+
+.menu .proucts-contain .product-box .button-contain a span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.menu .proucts-contain .product-box .button-contain a span.blue {
+  color: #008BD2;
+}
+
+.menu .proucts-contain .product-box .button-contain a span.price {
+  color: #000000;
+  font-weight: 700;
+}
+
+.menu .proucts-contain .product-box .button-contain a:hover {
+  background-color: #008BD2;
+}
+
+.menu .proucts-contain .product-box .button-contain a:hover span {
+  color: #fff !important;
+}
+
+.menu .open-menu {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99 !important;
+  background-color: #008BD2;
+  display: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .open-menu img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.menu .open-menu span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 @media (max-width: 999px) {
   .page-title-box {
     -webkit-box-orient: vertical;
@@ -1332,6 +2292,40 @@ a {
   }
   .table-contain .table th, .table-contain .table td {
     min-width: 190px !important;
+  }
+  .casher-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999 !important;
+  }
+  .menu .menu-list {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    z-index: 999 !important;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    padding-top: 110px !important;
+    overflow-y: scroll !important;
+  }
+  .menu .menu-list.active-list {
+    right: 0px;
+  }
+  .menu .proucts-contain {
+    height: unset !important;
+    overflow: unset !important;
+    padding-top: 130px !important;
+  }
+  .menu .open-menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .menu .proucts-contain .product-box .button-contain a span {
+    font-size: 11px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
