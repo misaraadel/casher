@@ -2327,5 +2327,11 @@ a {
   .menu .proucts-contain .product-box .button-contain a span {
     font-size: 11px !important;
   }
+  .bill-shape li.calulate .flex-number .number-btn {
+    width: 55px !important;
+  }
+  .menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .equal-btn {
+    width: 113px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
