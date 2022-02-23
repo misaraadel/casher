@@ -2027,6 +2027,66 @@ a {
           justify-content: center;
 }
 
+.menu .buttons-contain {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-x: hidden;
+  padding: 20px 0px;
+}
+
+.menu .buttons-contain::-webkit-scrollbar-thumb, .menu .buttons-contain::-webkit-scrollbar-track, .menu .buttons-contain::-webkit-scrollbar {
+  width: 0px !important;
+  background: transparent !important;
+}
+
+.menu .buttons-contain .btn-link {
+  width: 120px;
+  height: 47px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+
+.menu .buttons-contain .btn-link.blue-bk {
+  background-color: #008BD2;
+}
+
+.menu .buttons-contain .btn-link.green-bk {
+  background-color: #469248;
+}
+
+.menu .buttons-contain .btn-link.red-bk {
+  background-color: #D11F1F;
+}
+
 .menu .proucts-contain {
   width: 100%;
   padding: 25px 0px;

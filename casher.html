@@ -35,7 +35,7 @@
               صالة طعام
             </a>
 
-            <a href="#" class="small-btn blue-bk">
+            <a href="#" class="small-btn blue-bk" data-toggle="modal" data-target="#exampleModal">
               <img src="assets/images/plus.svg" alt="">
             </a>
 
@@ -77,14 +77,87 @@
       </div>
     </nav>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4 class="text-center">
+              اضافة منتج جديد
+            </h4>
+
+            <form class="form-contain">
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <div class="form-group">
+                    <label> 
+                      <span>
+                      اسم المنتج
+                      </span>
+                    </label>
+
+                    <input type="text" class="form-control" placeholder="اكتب هنا" />
+                  </div>
+                </div>
+
+                <div class="col-12 mb-3">
+                  <div class="form-group">
+                    <label>   
+                      <span>
+                      السعر 
+                      </span>
+                    </label>
+
+                    <input type="text" class="form-control" placeholder="اكتب هنا" />
+                  </div>
+                </div>
+
+                <div class="col-12 mb-3">
+                  <div class="form-group">
+                    <label> 
+                      <span>
+                       الضريبة
+                      </span>
+                    </label>
+
+                    <input type="text" class="form-control" placeholder="اكتب هنا" />
+                  </div>
+                </div>
+
+
+                <div class="col-12 mb-3">
+                  <div class="form-group">
+                    <label>   
+                      <span>
+                      الخصم 
+                      </span>
+                    </label>
+
+                    <input type="text" class="form-control" placeholder="اكتب هنا" />
+                  </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <button type="button" class="btn-primary-shape" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-pen"></i>
+
+                    <span>
+                      اضافة
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <main>
       <section class="menu">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 col-6 col-12">
               <div class="menu-list">
-                
-
                 <ul class="data-list">
                   <li>
                     <div class="content">
@@ -351,6 +424,22 @@
             <div class="col-lg-9 col-12">
               <div class="proucts-contain">
                 <div class="row">
+                  <div class="col-12">
+                    <div class="buttons-contain">
+                      <a href="#" class="btn-link blue-bk">
+                        طاولة 1
+                      </a>
+
+                      <a href="#" class="btn-link red-bk">
+                        طاولة 2
+                      </a>
+
+                      <a href="#" class="btn-link green-bk">
+                        طاولة 3
+                      </a>
+                    </div>
+                  </div>
+
                   <div class="col-12">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                       <li class="nav-item">

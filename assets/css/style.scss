@@ -1026,6 +1026,52 @@
         }
     }
 
+    .buttons-contain {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-x: hidden;
+        padding: 20px 0px;
+
+        &::-webkit-scrollbar-thumb,
+        &::-webkit-scrollbar-track,
+        &::-webkit-scrollbar {
+            width: 0px !important;
+            background: transparent !important;
+        }
+        
+        .btn-link{
+            width: 120px;
+            height: 47px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            margin-inline-end: 5px;
+
+            &.blue-bk {
+                background-color: #008BD2;
+            }
+
+            &.green-bk {
+                background-color: #469248;
+            }
+
+            &.red-bk {
+                background-color: #D11F1F;
+            }
+        }
+    }
+
     .proucts-contain {
         width: 100%;
         padding: 25px 0px;
