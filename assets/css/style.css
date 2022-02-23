@@ -2306,7 +2306,7 @@ a {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 99 !important;
+  z-index: 98 !important;
   background-color: #008BD2;
   display: none;
   -ms-flex-line-pack: center;
@@ -2357,7 +2357,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99999 !important;
+    z-index: 999 !important;
   }
   .menu .menu-list {
     width: 100%;
@@ -2365,7 +2365,7 @@ a {
     position: fixed;
     top: 0px;
     right: -100%;
-    z-index: 999 !important;
+    z-index: 99 !important;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
     padding-top: 110px !important;

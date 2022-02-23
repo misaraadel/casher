@@ -1251,7 +1251,7 @@
         position: fixed;
         bottom: 0;
         left: 0;
-        z-index: 99 !important;
+        z-index: 98 !important;
         background-color: #008BD2;
         display: none;
         align-content: center;
@@ -1301,7 +1301,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 99999 !important;
+        z-index: 999 !important;
     }
 
     .menu {
@@ -1312,7 +1312,7 @@
             position: fixed;
             top: 0px;
             right: -100%;
-            z-index: 999 !important;
+            z-index: 99 !important;
             transition: all .3s linear;
             padding-top: 110px !important;
             overflow-y: scroll !important;
