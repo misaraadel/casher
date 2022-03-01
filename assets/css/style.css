@@ -3141,5 +3141,14 @@ a {
   .login .form-contain {
     padding: 20px 10px !important;
   }
+  .casher-box .buttons-contain {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .casher-box .buttons-contain .btn-link.yellow {
+    margin: 10px 0px 0px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

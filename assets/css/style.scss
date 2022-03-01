@@ -1928,4 +1928,12 @@
     .login .form-contain {
         padding: 20px 10px !important;
     }
+
+    .casher-box .buttons-contain{ 
+        flex-direction: column !important;
+
+        .btn-link.yellow {
+            margin: 10px 0px 0px !important;
+        }
+    }
 }
