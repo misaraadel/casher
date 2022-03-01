@@ -102,20 +102,19 @@
               </button>
             </div>
 
-            <div class="dropdown d-inline-block">
+             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-4.jpg" alt="Header Avatar">
+                    <img class="rounded-circle header-profile-user" src="assets/images/team.svg" alt="Header Avatar">
                     <span class="d-none d-xl-inline-block ml-1 font-weight-medium font-size-15">اسم العميل</span>
                     <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
                   <!-- item-->
-                  <a class="dropdown-item" href="#"><i class="uil uil-user-circle font-size-18 align-middle text-muted mr-1"></i> <span class="align-middle">View Profile</span></a>
-                  <a class="dropdown-item" href="#"><i class="uil uil-wallet font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">My Wallet</span></a>
-                  <a class="dropdown-item d-block" href="#"><i class="uil uil-cog font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Settings</span> <span class="badge badge-soft-success badge-pill mt-1 ml-2">03</span></a>
-                  <a class="dropdown-item" href="#"><i class="uil uil-lock-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Lock screen</span></a>
-                  <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Sign out</span></a>
+                  <a class="dropdown-item d-block" href="#"><i class="uil uil-cog font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">الاشعارات</span> <span class="badge badge-soft-success badge-pill mt-1 ml-2">03</span></a>
+                  <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">
+                    تسجيل خروج
+                  </span></a>
                 </div>
             </div>
           </div>
@@ -226,13 +225,26 @@
                 </li>
 
                 <li>
-                  <a href="roles.html">
-                    <i class="fas fa-sort-amount-down"></i>
+                  <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="fas fa-cog"></i>
 
                     <span>
-                    الصلاحيات
+                      الصلاحيات
                     </span>
                   </a>
+
+                  <ul class="sub-menu" aria-expanded="false">
+                    <li>
+                      <a href="roles.html">
+                        الصلاحيات 
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        المستخدمين
+                      </a>
+                    </li>
+                  </ul>
                 </li>
 
                 <li>
@@ -252,7 +264,7 @@
                     </li>
                     <li>
                       <a href="paymentmethod.html">
-                      الاكواد العامة
+                        طرق الدفع 
                       </a>
                     </li>
                     <li>

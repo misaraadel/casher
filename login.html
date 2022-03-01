@@ -22,6 +22,22 @@
     </head>
   
   <body>
+    <nav class="login-navbar">
+      <div class="container">
+        <div class="content">
+          <a href="#" class="brand-name">
+            <img
+              src="assets/images/icon.png"
+              alt="" />
+          </a>
+
+          <a href="#" class="language">
+            EN
+          </a>
+        </div>
+      </div>  
+    </nav>
+
     <section class="login">
       <div class="container">
         <div class="row">
@@ -69,7 +85,7 @@
                         </label>
                       </div>
 
-                      <a href="#">
+                      <a href="#" data-toggle="modal" data-target="#forgetModal">
                         نسيت كلمة المرور ؟
                       </a>
                     </div>
@@ -99,6 +115,56 @@
             <h4>
               تم تسجيل الدخول بنجاح
             </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="assets/images/check_icon.svg" alt="" />
+
+            <h4>
+              تصفح الايميل الخاص بك 
+
+              mail@mail.com
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="forgetModal" tabindex="-1" aria-labelledby="forgetModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4>
+              نسيت كلمة المرور
+            </h4>
+
+            <form class="form-contain">
+              <div class="row">
+                <div class="col-12 mb-2">
+                  <div class="form-group">
+                    <div class="icon">
+                      <img src="assets/images/message.svg" alt="">
+                    </div>
+
+                    <input type="text" class="form-control" placeholder="البريد الالكتروني" />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button type="button" class="btn-primary-shape" data-toggle="modal" data-target="#emailModal" data-dismiss="modal">
+                    <span>
+                      ارسال
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

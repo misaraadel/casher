@@ -2835,11 +2835,10 @@ a {
 
 .inovice-data-contain .copyrights {
   padding: 20px 0px;
-  background-color: #333;
+  background-color: #fff;
   width: 100%;
   position: relative;
   top: 81px;
-  margin-top: 40px;
 }
 
 .inovice-data-contain .copyrights .qr-contain {
@@ -2855,7 +2854,7 @@ a {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: -100px;
+  margin-top: -50px;
 }
 
 .inovice-data-contain .copyrights .qr-code {
@@ -2869,7 +2868,7 @@ a {
 }
 
 .inovice-data-contain .copyrights .content p {
-  color: #fff;
+  color: #000;
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: 500;
@@ -3077,6 +3076,141 @@ a {
 
 .login .form-data .btn-primary-shape {
   width: 100% !important;
+}
+
+.login-navbar {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #fff;
+}
+
+.login-navbar .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login-navbar .content img {
+  width: 120px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.login-navbar .content .language {
+  width: 50px;
+  height: 50px;
+  background-color: #008BD2;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-navbar .content .language:hover {
+  background-color: #F09B0C;
+  color: #fff;
+}
+
+.modal .form-contain {
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 6px 6px;
+}
+
+.modal .form-contain .form-group {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin: 20px 0px;
+}
+
+.modal .form-contain .form-group .icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 15px;
+}
+
+.modal .form-contain .form-group .icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.modal .form-contain .form-group:hover img {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal .form-contain .form-group .form-control {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 139, 210, 0.03);
+  border: 1px solid rgba(0, 139, 210, 0.06);
+  border-radius: 6px;
+  padding: 0px 50px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.modal .form-contain .form-group .form-control::-webkit-input-placeholder {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.modal .form-contain .form-group .form-control:-ms-input-placeholder {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.modal .form-contain .form-group .form-control::-ms-input-placeholder {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.modal .form-contain .form-group .form-control::placeholder {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.modal .form-contain .form-group .form-control:focus, .modal .form-contain .form-group .form-control:hover {
+  border: 1px solid rgba(0, 139, 210, 0.4);
 }
 
 @media (max-width: 999px) {
