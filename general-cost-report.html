@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>
-      كاشير
+      كاشير   
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="..." name="description" />
@@ -181,7 +181,8 @@
                           الكاشير
                         </a>
                       </li>
-                       <li>
+
+                      <li>
                         <a href="sessions.html">
                           جلسات البيع
                         </a>
@@ -290,7 +291,7 @@
                     </span>
                   </a>
 
-                   <ul class="sub-menu" aria-expanded="false">
+                  <ul class="sub-menu" aria-expanded="false">
                     <li>
                       <a href="general_report.html">
                         التقرير العام
@@ -384,18 +385,101 @@
               <div class="col-12 mb-4">
                 <div class="page-title-box d-flex align-items-center justify-content-between">
                   <h4 class="mb-0 primary-color">
-                   <i class="fas fa-file"></i>
-                    طرق الدفع
+                    تقرير التكلفة العامة
                   </h4>
-
-                  <a href="add_ordertype.html" class="btn-primary-shape small-btn">
-                    <i class="fas fa-pen"></i>
-
-                    <span>
-                      اضافة جديد 
-                    </span>
-                  </a>
                 </div>
+              </div>
+
+              <div class="col-12">
+                <form class="form-contain">
+                  <div class="row">
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            التاريخ من 
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control"  placeholder="اختر هنا"  />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            التاريخ الي 
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اختر هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            المنتج
+                          </span>
+                        </label>
+                        <select class="form-control">
+                          <option value="">
+                           شعير
+                          </option>
+
+                          <option value="">
+                           شعير 
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label for="">
+                          <span>
+                            العلامة التجارية
+                          </span>
+                        </label>
+
+                        <input type="text" placeholder="اكتب هنا" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label for="">
+                          <span>
+                            التصنيف
+                          </span>
+                        </label>
+
+                        <input type="text" placeholder="اكتب هنا" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            نقاط البيع
+                          </span>
+                        </label>
+                        <select class="form-control">
+                          <option value="">
+                           كاشير 
+                          </option>
+                          
+                          <option value="">
+                            كاشير
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
 
               <div class="col-12">
@@ -408,11 +492,63 @@
                         </th>
 
                         <th>
-                          العنوان
+                          الرقم
                         </th>
 
                         <th>
-                          تعديل | حذف
+                          اسم المنتج  
+                        </th>
+
+                        <th>
+                          الفرع 
+                        </th>
+
+                        <th>
+                          العلامة التجارية
+                        </th>
+
+                        <th>
+                          التصنيف
+                        </th>
+
+                        <th>
+                          التكلفة العامة
+                        </th>
+
+                        <th>
+                          سعر البيع 
+                        </th>
+
+                        <th>
+                          الكمية الكلية  
+                        </th>
+
+                        <th>
+                          الكمية المباعة
+                        </th>
+                        
+                        <th>
+                          الكمية المرتجعة 
+                        </th>
+
+                        <th>
+                          الخصم الكلي    
+                        </th>
+
+                        <th>
+                          إجمالي التكلفة العامة
+                        </th>
+
+                        <th>
+                          إجمالي سعر المرتجع  
+                        </th>
+
+                        <th>
+                          الايرادات 
+                        </th>
+
+                        <th>
+                          الأرباح 
                         </th>
                       </tr>
                     </thead>
@@ -423,63 +559,62 @@
                         </td>
 
                         <td>
-                          طلب من تطبيق
+                          165785
                         </td>
 
                         <td>
-                          <div class="button-contain">
-                            <a href="ordertype_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
-
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          2
+                          الفاخر 500 غرام
                         </td>
 
                         <td>
-                          تجهيز مناسبة
+                          الفرع الاساسي
                         </td>
 
                         <td>
-                          <div class="button-contain">
-                            <a href="ordertype_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
-
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          3
+                          العلامة التجارية 
                         </td>
 
                         <td>
-                          سفري 
+                          التصنيف الإفتراضي
                         </td>
 
                         <td>
-                          <div class="button-contain">
-                            <a href="ordertype_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
+                          133.000
+                        </td>
 
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
+                        <td>
+                          140
+                        </td>
+
+                        <td>
+                          25
+                        </td>
+
+                        <td>
+                          25
+                        </td>
+
+                        <td>
+                          0
+                        </td>
+
+                        <td>
+                          616.000                        
+                        </td>
+
+                        <td>
+                          3325.000
+                        </td>
+                        <td>
+                          0.000
+                        </td>
+
+                        <td>
+                          2884.000
+                        </td>
+
+                        <td>
+                          -441.000
                         </td>
                       </tr>
                     </tbody>
@@ -499,7 +634,7 @@
             <img src="assets/images/check_icon.svg" alt="" />
 
             <h4>
-              تم تعديل البيانات بنجاح
+              تم اضافة بيانات العميل بنجاح
             </h4>
           </div>
         </div>
@@ -522,6 +657,7 @@
     <script src="assets/js/pages/apexcharts.init.js"></script>
 
     <script src="assets/js/app.js"></script>
+
     <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>
-      كاشير
+      كاشير   
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="..." name="description" />
@@ -181,7 +181,8 @@
                           الكاشير
                         </a>
                       </li>
-                       <li>
+
+                      <li>
                         <a href="sessions.html">
                           جلسات البيع
                         </a>
@@ -290,7 +291,7 @@
                     </span>
                   </a>
 
-                   <ul class="sub-menu" aria-expanded="false">
+                  <ul class="sub-menu" aria-expanded="false">
                     <li>
                       <a href="general_report.html">
                         التقرير العام
@@ -384,18 +385,31 @@
               <div class="col-12 mb-4">
                 <div class="page-title-box d-flex align-items-center justify-content-between">
                   <h4 class="mb-0 primary-color">
-                   <i class="fas fa-file"></i>
-                    طرق الدفع
+                    تقرير التجزئة
                   </h4>
-
-                  <a href="add_ordertype.html" class="btn-primary-shape small-btn">
-                    <i class="fas fa-pen"></i>
-
-                    <span>
-                      اضافة جديد 
-                    </span>
-                  </a>
                 </div>
+              </div>
+
+              <div class="col-12">
+                <form class="form-contain">
+                  <div class="row">
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            الفرع
+                          </span>
+                        </label>
+    
+                        <select class="form-control">
+                          <option value="">
+                            لا شئ
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
 
               <div class="col-12">
@@ -408,11 +422,23 @@
                         </th>
 
                         <th>
-                          العنوان
+                          الفرع
                         </th>
 
                         <th>
-                          تعديل | حذف
+                          إجمالي المبيعات	
+                        </th>
+
+                        <th>
+                          عدد العمليات	 
+                        </th>
+
+                        <th>
+                          متوسط قيمة العمليات
+                        </th>
+
+                        <th>
+                          متوسط حجم العمليات
                         </th>
                       </tr>
                     </thead>
@@ -423,63 +449,23 @@
                         </td>
 
                         <td>
-                          طلب من تطبيق
+                          أزهار ريثا	
                         </td>
 
                         <td>
-                          <div class="button-contain">
-                            <a href="ordertype_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
-
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          2
+                          379.950	
                         </td>
 
                         <td>
-                          تجهيز مناسبة
+                          379.950	
                         </td>
 
                         <td>
-                          <div class="button-contain">
-                            <a href="ordertype_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
-
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          3
+                          37.995
                         </td>
 
                         <td>
-                          سفري 
-                        </td>
-
-                        <td>
-                          <div class="button-contain">
-                            <a href="ordertype_edit.html">
-                              <img src="assets/images/edit_pen.svg" alt="">
-                            </a>
-
-                            <a href="#">
-                              <img src="assets/images/delete.svg" alt="">
-                            </a>
-                          </div>
+                          4.800
                         </td>
                       </tr>
                     </tbody>
@@ -499,7 +485,7 @@
             <img src="assets/images/check_icon.svg" alt="" />
 
             <h4>
-              تم تعديل البيانات بنجاح
+              تم اضافة بيانات العميل بنجاح
             </h4>
           </div>
         </div>
@@ -522,6 +508,7 @@
     <script src="assets/js/pages/apexcharts.init.js"></script>
 
     <script src="assets/js/app.js"></script>
+
     <script src="assets/js/main.js"></script>
   </body>
 </html>

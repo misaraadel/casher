@@ -720,6 +720,25 @@ a {
   text-decoration: none !important;
 }
 
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #008BD2;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F09B0C), to(#008BD2));
+  background: linear-gradient(180deg, #F09B0C, #008BD2);
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#008BD2), to(#F09B0C));
+  background: linear-gradient(180deg, #008BD2, #F09B0C);
+}
+
 .vertical-menu,
 .navbar-brand-box {
   background-color: transparent !important;
@@ -1069,15 +1088,18 @@ a {
 
 .table-contain::-webkit-scrollbar-track {
   background-color: transparent !important;
+  height: 2px !important;
 }
 
 .table-contain::-webkit-scrollbar-thumb {
-  background: transparent !important;
+  background: #008BD2 !important;
   border-radius: 8px;
+  height: 2px !important;
 }
 
 .table-contain::-webkit-scrollbar {
   width: 0px !important;
+  height: 5px !important;
 }
 
 .table-contain .table th {
@@ -3213,6 +3235,310 @@ a {
   border: 1px solid rgba(0, 139, 210, 0.4);
 }
 
+.copyrights-contain {
+  background-color: #333 !important;
+  -webkit-padding-start: 40px !important;
+          padding-inline-start: 40px !important;
+  padding-top: 10px !important;
+}
+
+.copyrights-contain p {
+  color: #fff !important;
+}
+
+.main-layout-shape {
+  background-color: rgba(0, 139, 210, 0.04);
+}
+
+.theme {
+  padding: 0px;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100px;
+  height: 44px;
+  background-color: #008BD2;
+  border-radius: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 99;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+
+.theme .fa-moon {
+  color: #000;
+}
+
+.theme .fa-sun {
+  color: #fff;
+}
+
+.theme::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #F09B0C;
+  border-radius: 50%;
+  left: 0%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.theme.darkmode::after {
+  left: 58% !important;
+}
+
+.theme.darkmode .fa-sun {
+  color: #000;
+}
+
+.theme.darkmode .fa-moon {
+  color: #fff;
+}
+
+.table-contain .table th {
+  font-size: 13px !important;
+}
+
+.table-contain .table td {
+  font-size: 12px !important;
+}
+
+.table-contain .table th, .table-contain .table td {
+  min-width: 190px !important;
+}
+
+.dark-mode {
+  background-color: #333 !important;
+}
+
+.dark-mode::-webkit-scrollbar-track {
+  background-color: #333 !important;
+}
+
+.dark-mode::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#008BD2), to(#333)) !important;
+  background: linear-gradient(180deg, #008BD2, #333) !important;
+  border-radius: 8px;
+}
+
+.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#008BD2)) !important;
+  background: linear-gradient(180deg, #333, #008BD2) !important;
+}
+
+.dark-mode #page-topbar, .dark-mode .bg-ligt, .dark-mode .box, .dark-mode .card, .dark-mode .dropdown-menu,
+.dark-mode .casher-box, .dark-mode .casher-nav, .dark-mode .menu .menu-list,
+.dark-mode .form-contain .form-group .form-control, .dark-mode .menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .number-btn,
+.dark-mode .menu .menu-list .bill-contain, .dark-mode .profile-card,
+.dark-mode .menu .proucts-contain .product-box,
+.dark-mode .profile-card .image-content,
+.dark-mode .form-contain .wrapper .radio-check,
+.dark-mode .modal-content, .dark-mode .modal .form-contain,
+.dark-mode .login-navbar {
+  background-color: #2A2A2A !important;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 139, 210, 0.04) !important;
+          box-shadow: 0px 2px 4px rgba(0, 139, 210, 0.04) !important;
+}
+
+.dark-mode .modal .form-contain {
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+}
+
+.dark-mode .navbar-brand-box, .dark-mode .box, .dark-mode .card, .dark-mode .dropdown-menu,
+.dark-mode .form-contain .form-group .form-control,
+.dark-mode .menu .proucts-contain .product-box, .dark-mode .modal-content,
+.dark-mode .profile-card, .dark-mode .dropdown-menu .form-group .form-control,
+.dark-mode .box .box-icon, .dark-mode .card .box-icon {
+  border-color: rgba(0, 139, 210, 0.04) !important;
+}
+
+.dark-mode .mm-active > a,
+.dark-mode .navbar-header .dropdown.show .header-item,
+.dark-mode .dropdown-item:focus, .dark-mode .dropdown-item:hover {
+  background-color: rgba(0, 139, 210, 0.04) !important;
+}
+
+.dark-mode .main-content, .dark-mode .menu .menu-list .button-contain .small-btn,
+.dark-mode .menu .menu-list .bill-contain .bill-shape li.calulate,
+.dark-mode .menu .proucts-contain .product-box .button-contain a,
+.dark-mode .login, .dark-mode .dropdown-menu .form-group .form-control,
+.dark-mode .login .form-data .form-contain,
+.dark-mode .modal .form-group .form-control,
+.dark-mode .box .box-icon, .dark-mode .card .box-icon {
+  background-color: #333 !important;
+}
+
+.dark-mode .noti-icon i,
+.dark-mode .app-search span,
+.dark-mode .dropdown button span,
+.dark-mode .dropdown button i,
+.dark-mode .app-search .form-control::-webkit-input-placeholder,
+.dark-mode .box h4, .dark-mode .card h4,
+.dark-mode .dropdown-item, .dark-mode .profile-card .content .data li span,
+.dark-mode .dropdown-item span, .dark-mode .menu .proucts-contain .product-box h4,
+.dark-mode .dropdown-item i, .dark-mode .menu .menu-list .payment,
+.dark-mode .casher-box h4, .dark-mode .menu .menu-list .data-list li .content h4,
+.dark-mode .casher-box .data li span, .dark-mode .dark-color,
+.dark-mode .form-contain .wrapper .radio-title, .dark-mode .login .form-data .links a,
+.dark-mode .modal-body h4 {
+  color: #fff !important;
+}
+
+.dark-mode .noti-icon i,
+.dark-mode .app-search span,
+.dark-mode .dropdown button span,
+.dark-mode .dropdown button i,
+.dark-mode .app-search .form-control:-ms-input-placeholder,
+.dark-mode .box h4, .dark-mode .card h4,
+.dark-mode .dropdown-item, .dark-mode .profile-card .content .data li span,
+.dark-mode .dropdown-item span, .dark-mode .menu .proucts-contain .product-box h4,
+.dark-mode .dropdown-item i, .dark-mode .menu .menu-list .payment,
+.dark-mode .casher-box h4, .dark-mode .menu .menu-list .data-list li .content h4,
+.dark-mode .casher-box .data li span, .dark-mode .dark-color,
+.dark-mode .form-contain .wrapper .radio-title, .dark-mode .login .form-data .links a,
+.dark-mode .modal-body h4 {
+  color: #fff !important;
+}
+
+.dark-mode .noti-icon i,
+.dark-mode .app-search span,
+.dark-mode .dropdown button span,
+.dark-mode .dropdown button i,
+.dark-mode .app-search .form-control::-ms-input-placeholder,
+.dark-mode .box h4, .dark-mode .card h4,
+.dark-mode .dropdown-item, .dark-mode .profile-card .content .data li span,
+.dark-mode .dropdown-item span, .dark-mode .menu .proucts-contain .product-box h4,
+.dark-mode .dropdown-item i, .dark-mode .menu .menu-list .payment,
+.dark-mode .casher-box h4, .dark-mode .menu .menu-list .data-list li .content h4,
+.dark-mode .casher-box .data li span, .dark-mode .dark-color,
+.dark-mode .form-contain .wrapper .radio-title, .dark-mode .login .form-data .links a,
+.dark-mode .modal-body h4 {
+  color: #fff !important;
+}
+
+.dark-mode .noti-icon i,
+.dark-mode .app-search span,
+.dark-mode .dropdown button span,
+.dark-mode .dropdown button i,
+.dark-mode .app-search .form-control::placeholder,
+.dark-mode .box h4, .dark-mode .card h4,
+.dark-mode .dropdown-item, .dark-mode .profile-card .content .data li span,
+.dark-mode .dropdown-item span, .dark-mode .menu .proucts-contain .product-box h4,
+.dark-mode .dropdown-item i, .dark-mode .menu .menu-list .payment,
+.dark-mode .casher-box h4, .dark-mode .menu .menu-list .data-list li .content h4,
+.dark-mode .casher-box .data li span, .dark-mode .dark-color,
+.dark-mode .form-contain .wrapper .radio-title, .dark-mode .login .form-data .links a,
+.dark-mode .modal-body h4 {
+  color: #fff !important;
+}
+
+.dark-mode .casher-box .form-group .form-control {
+  background-color: #333 !important;
+}
+
+.dark-mode .casher-box .form-group .form-control::-webkit-input-placeholder {
+  color: #f8f8f8;
+}
+
+.dark-mode .casher-box .form-group .form-control:-ms-input-placeholder {
+  color: #f8f8f8;
+}
+
+.dark-mode .casher-box .form-group .form-control::-ms-input-placeholder {
+  color: #f8f8f8;
+}
+
+.dark-mode .casher-box .form-group .form-control::placeholder {
+  color: #f8f8f8;
+}
+
+.dark-mode .app-search .form-control,
+.dark-mode #sidebar-menu ul li a,
+.dark-mode #sidebar-menu ul li a i,
+.dark-mode .casher-box p, .dark-mode .menu .proucts-contain .product-box .button-contain a span.price,
+.dark-mode .table-contain .table td,
+.dark-mode .form-contain .form-group label span,
+.dark-mode .form-contain .form-group .form-control,
+.dark-mode .form-contain .form-group .form-control::-webkit-input-placeholder {
+  color: #f8f8f8 !important;
+}
+
+.dark-mode .app-search .form-control,
+.dark-mode #sidebar-menu ul li a,
+.dark-mode #sidebar-menu ul li a i,
+.dark-mode .casher-box p, .dark-mode .menu .proucts-contain .product-box .button-contain a span.price,
+.dark-mode .table-contain .table td,
+.dark-mode .form-contain .form-group label span,
+.dark-mode .form-contain .form-group .form-control,
+.dark-mode .form-contain .form-group .form-control:-ms-input-placeholder {
+  color: #f8f8f8 !important;
+}
+
+.dark-mode .app-search .form-control,
+.dark-mode #sidebar-menu ul li a,
+.dark-mode #sidebar-menu ul li a i,
+.dark-mode .casher-box p, .dark-mode .menu .proucts-contain .product-box .button-contain a span.price,
+.dark-mode .table-contain .table td,
+.dark-mode .form-contain .form-group label span,
+.dark-mode .form-contain .form-group .form-control,
+.dark-mode .form-contain .form-group .form-control::-ms-input-placeholder {
+  color: #f8f8f8 !important;
+}
+
+.dark-mode .app-search .form-control,
+.dark-mode #sidebar-menu ul li a,
+.dark-mode #sidebar-menu ul li a i,
+.dark-mode .casher-box p, .dark-mode .menu .proucts-contain .product-box .button-contain a span.price,
+.dark-mode .table-contain .table td,
+.dark-mode .form-contain .form-group label span,
+.dark-mode .form-contain .form-group .form-control,
+.dark-mode .form-contain .form-group .form-control::placeholder {
+  color: #f8f8f8 !important;
+}
+
+.dark-mode .table-contain .table th {
+  background-color: rgba(0, 139, 210, 0.5);
+  color: #fff !important;
+}
+
+.dark-mode .menu {
+  background-color: transparent !important;
+}
+
+.dark-mode .profile-card .content .btn-contain a.delete-btn {
+  background-color: rgba(209, 31, 31, 0.3);
+}
+
+.dark-mode .profile-card .content .btn-contain a.second-btn {
+  background-color: rgba(124, 14, 111, 0.3);
+}
+
+.dark-mode .profile-card .content .btn-contain a.primary-btn {
+  background-color: rgba(0, 139, 210, 0.3);
+}
+
+.dark-mode input[type="file"] {
+  color: #fff;
+}
+
 @media (max-width: 999px) {
   .page-title-box {
     -webkit-box-orient: vertical;
@@ -3222,15 +3548,6 @@ a {
   }
   .page-title-box h4 {
     margin-bottom: 20px !important;
-  }
-  .table-contain .table th {
-    font-size: 13px !important;
-  }
-  .table-contain .table td {
-    font-size: 12px !important;
-  }
-  .table-contain .table th, .table-contain .table td {
-    min-width: 190px !important;
   }
   .casher-nav {
     position: fixed;
@@ -3283,6 +3600,15 @@ a {
   }
   .casher-box .buttons-contain .btn-link.yellow {
     margin: 10px 0px 0px !important;
+  }
+  .dropdown {
+    margin: 0px 5px !important;
+  }
+  .dropdown button {
+    padding: 0px !important;
+  }
+  .dropdown-menu .form-group .input-group-append .btn {
+    padding: .375rem .75rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

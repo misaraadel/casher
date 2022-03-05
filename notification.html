@@ -61,48 +61,55 @@
             </form>
           </div>
 
-          <div class="d-flex">
+          <div class="d-flex align-items-center">
 
             <div class="dropdown d-inline-block d-lg-none ml-2">
-              <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="uil-search"></i>
-              </button>
-              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
-                  aria-labelledby="page-header-search-dropdown">
-            
-                  <form class="p-3">
-                    <div class="form-group m-0">
-                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="ابحث هنا  ..." aria-label="Recipient's username">
-                        <div class="input-group-append">
-                          <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="uil-search"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                    aria-labelledby="page-header-search-dropdown">
+        
+                    <form class="p-3">
+                        <div class="form-group m-0">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="ابحث هنا  ..." aria-label="Recipient's username">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </form>
-              </div>
+                    </form>
+                </div>
             </div>
-            <div class="dropdown d-inline-block language-switch">   
-              <button type="button" class="btn header-item waves-effect"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="assets/images/flags/arabic.png" alt="Header Language" height="33">
-              </button>
 
-              <div class="dropdown-menu dropdown-menu-right">
-                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                  <img src="assets/images/flags/us.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">english</span>
-                </a>
-              </div>
+            <div class="dropdown d-inline-block language-switch">   
+                <button type="button" class="btn header-item waves-effect"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/flags/arabic.png" alt="Header Language" height="33">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+        
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <img src="assets/images/flags/us.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">english</span>
+                    </a>
+                </div>
             </div>
 
             <div class="dropdown d-none d-lg-inline-block ml-1">
-              <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
-                <i class="uil-minus-path"></i>
-              </button>
+                <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                    <i class="uil-minus-path"></i>
+                </button>
             </div>
 
-             <div class="dropdown d-inline-block">
+            <div class="theme ml-1">
+                <span class="themeBtn darkTheme ">  <i class="far fa-moon"></i> </span>
+                <span class="themeBtn lightTheme active"> <i class="far fa-sun"></i> </span>
+            </div>
+
+            <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class="rounded-circle header-profile-user" src="assets/images/team.svg" alt="Header Avatar">
@@ -117,7 +124,7 @@
                   </span></a>
                 </div>
             </div>
-          </div>
+        </div>
         </div>
       </header>
       <!-- ========== Left Sidebar Start ========== -->
@@ -274,6 +281,94 @@
                     </li>
                   </ul>
                 </li>
+
+                <li>
+                  <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="fas fa-file"></i>
+
+                    <span>
+                    التقارير
+                    </span>
+                  </a>
+
+                   <ul class="sub-menu" aria-expanded="false">
+                    <li>
+                      <a href="general_report.html">
+                        التقرير العام
+                      </a>
+                    </li>
+                    <li>
+                      <a href="general-cost-report.html">
+                        تقرير التكلفة العامة
+                      </a>
+                    </li>
+                    <li>
+                      <a href="expired-products-report.html">
+                        تقرير منتجات منتهية الصلاحية
+                      </a>
+                    </li>
+                    <li>
+                      <a href="near-expired-products-report.html">
+                        تقرير المنتجات التي قاربت على الانتهاء
+                      </a>
+                    </li>
+                    <li>
+                      <a href="top-selling-products-report.html">
+                        تقرير المنتجات الأعلى مبيعاً
+                      </a>
+                    </li>
+                    <li>
+                      <a href="shift-report.html">
+                        تقرير الورديات
+                      </a>
+                    </li>
+                    <li>
+                      <a href="orders.html">
+                        الطلبات
+                      </a>
+                    </li>
+                    <li>
+                      <a href="credit-sale-accounts-report.html">
+                      تقرير البيع بالآجل
+                      </a>
+                    </li>
+                    <li>
+                      <a href="customer-report.html">
+                        تقرير العملاء
+                      </a>
+                    </li>
+                    <li>
+                      <a href="retail-report.html">
+                        تقرير التجزئة
+                      </a>
+                    </li>
+                    <li>
+                      <a href="point-of-sale-report.html">
+                        تقرير البيع
+                      </a>
+                    </li>
+                    <li>
+                      <a href="sold-products.html">
+                        المنتجات المباعة
+                      </a>
+                    </li>
+                    <li>
+                      <a href="daily-sold-products.html">
+                        المنتجات المباعة يومياً
+                      </a>
+                    </li>
+                    <li>
+                      <a href="pending-ordrs-report.html">
+                        طلبات قيد التنفيذ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tax-report.html">
+                        تقرير الضرائب
+                      </a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
             <!-- Sidebar -->
@@ -379,5 +474,7 @@
     <script src="assets/js/pages/apexcharts.init.js"></script>
 
     <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
