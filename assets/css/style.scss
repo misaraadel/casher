@@ -2021,6 +2021,7 @@
         background-color: #F09B0C;
         border-radius: 50%;
         left: 0%;
+        right: unset !important;
         top: 50%;
         transform: translateY(-50%);
         z-index: -1;
@@ -2029,7 +2030,8 @@
 
     &.darkmode {
         &::after {
-            left: 58% !important;
+            left: unset!important;
+            right: 0% !important;
         }
 
         .fa-sun {
@@ -2181,6 +2183,16 @@
 
         h4{
             margin-bottom: 20px !important;
+        }
+    }
+
+    .theme {
+        width: 57px;
+        height: 27px;
+        padding: 0px 7px;
+
+        &::after {
+            display: none;
         }
     }
 

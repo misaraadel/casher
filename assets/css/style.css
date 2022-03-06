@@ -3292,6 +3292,7 @@ a {
   background-color: #F09B0C;
   border-radius: 50%;
   left: 0%;
+  right: unset !important;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3301,7 +3302,8 @@ a {
 }
 
 .theme.darkmode::after {
-  left: 58% !important;
+  left: unset !important;
+  right: 0% !important;
 }
 
 .theme.darkmode .fa-sun {
@@ -3548,6 +3550,14 @@ a {
   }
   .page-title-box h4 {
     margin-bottom: 20px !important;
+  }
+  .theme {
+    width: 57px;
+    height: 27px;
+    padding: 0px 7px;
+  }
+  .theme::after {
+    display: none;
   }
   .casher-nav {
     position: fixed;
