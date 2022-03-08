@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      كاشير   
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="..." name="description" />
+    <meta content="misara hammed" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/icon.png">
+    <link rel="stylesheet" href="assets/css/lib/all.min.css" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css"/>
+    <!-- Icons Css -->
+    <link rel="stylesheet" href="assets/css/lib/icons.min.css"  />
+    <!-- App Css-->
+    <link  rel="stylesheet" href="assets/css/lib/app-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css">
+    </head>
+  
+  <body>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+      <header id="page-topbar">
+        <div class="navbar-header">
+          <div class="d-flex">
+            <!-- LOGO -->
+            <div class="navbar-brand-box bg-ligt">
+              <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                  <img src="assets/images/icon.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                  <img src="assets/images/icon.png" alt="" height="20">
+                </span>
+              </a>
+
+              <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                  <img src="assets/images/icon.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                  <img src="assets/images/icon.png" alt="" height="20">
+                </span>
+              </a>
+            </div>
+
+            <button type="button" class="btn btn-sm togller-shape px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+              <img src="assets/images/toggler.svg" alt="">
+            </button>
+
+            <!-- App Search-->
+            <form class="app-search d-none d-lg-block">
+              <div class="position-relative">
+                <input type="text" class="form-control" placeholder="ابحث هنا...">
+                <span class="uil-search"></span>
+              </div>
+            </form>
+          </div>
+
+          <div class="d-flex align-items-center">
+
+            <div class="dropdown d-inline-block d-lg-none ml-2">
+                <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="uil-search"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                    aria-labelledby="page-header-search-dropdown">
+        
+                    <form class="p-3">
+                        <div class="form-group m-0">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="ابحث هنا  ..." aria-label="Recipient's username">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="dropdown d-inline-block language-switch">   
+                <button type="button" class="btn header-item waves-effect"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/flags/arabic.png" alt="Header Language" height="33">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+        
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <img src="assets/images/flags/us.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">english</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown d-none d-lg-inline-block ml-1">
+                <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                    <i class="uil-minus-path"></i>
+                </button>
+            </div>
+
+            <div class="theme ml-1">
+                <span class="themeBtn darkTheme ">  <i class="far fa-moon"></i> </span>
+                <span class="themeBtn lightTheme active"> <i class="far fa-sun"></i> </span>
+            </div>
+
+            <div class="dropdown d-inline-block">
+                <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="rounded-circle header-profile-user" src="assets/images/team.svg" alt="Header Avatar">
+                    <span class="d-none d-xl-inline-block ml-1 font-weight-medium font-size-15">اسم العميل</span>
+                    <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <!-- item-->
+                  <a class="dropdown-item d-block" href="#"><i class="uil uil-cog font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">الاشعارات</span> <span class="badge badge-soft-success badge-pill mt-1 ml-2">03</span></a>
+                  <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">
+                    تسجيل خروج
+                  </span></a>
+                </div>
+            </div>
+        </div>
+        </div>
+      </header>
+      <!-- ========== Left Sidebar Start ========== -->
+      <div class="vertical-menu bg-ligt">
+      <!-- LOGO -->
+      <div class="navbar-brand-box bg-ligt">
+        <a href="index.html" class="logo logo-dark">
+          <span class="logo-sm">
+            <img src="assets/images/icon.png" alt="" height="22">
+          </span>
+          <span class="logo-lg">
+            <img src="assets/images/icon.png" alt="" height="20">
+          </span>
+        </a>
+
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-sm">
+            <img src="assets/images/icon.png" alt="" height="22">
+          </span>
+          <span class="logo-lg">
+            <img src="assets/images/icon.png" alt="" height="20">
+          </span>
+        </a>
+      </div>
+
+      <button type="button" class="btn togller-shape btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+        <img src="assets/images/toggler.svg" alt="">
+      </button>
+
+          <div data-simplebar class="sidebar-menu-scroll">
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+              <!-- Left Menu Start -->
+              <ul class="metismenu list-unstyled" id="side-menu">
+                <li>
+                  <a class="active" href="index.html">
+                    <i class="fas fa-home-alt"></i>
+
+                    <span>الرئيسية</span>
+                  </a>
+                </li>
+                
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                      <i class="fa-solid fa-money-bill-1"></i>
+                      <span>
+                      المبيعات
+                      </span>
+                    </a>
+
+                    <ul class="sub-menu" aria-expanded="false">
+                      <li>
+                        <a href="casher_index.html">
+                          الكاشير
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="sessions.html">
+                          جلسات البيع
+                        </a>
+                      </li>
+
+                     <li>
+                        <a href="returns.html">
+                          المرتجعات
+                        </a>
+                      </li>
+
+                       <li>
+                        <a href="orderssearch.html">
+                          بحث الطلبات
+                        </a>
+                      </li>
+                    </ul>
+                </li>
+
+                <li>
+                  <a href="customers.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span>
+                    العملاء
+                    </span>
+                  </a>
+                </li>
+
+                 <li>
+                  <a href="tables.html">
+                    <i class="fas fa-wallet"></i>
+
+                    <span>
+                    الفروع
+                    </span>
+                  </a>
+                </li>
+
+               <li>
+                  <a href="notification.html">
+                    <i class="fas fa-bell"></i>
+
+                    <span>
+                    التنبيهات
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="fas fa-cog"></i>
+
+                    <span>
+                      الصلاحيات
+                    </span>
+                  </a>
+
+                  <ul class="sub-menu" aria-expanded="false">
+                    <li>
+                      <a href="roles.html">
+                        الصلاحيات 
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        المستخدمين
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="fas fa-cog"></i>
+
+                    <span>
+                    الاعدادات
+                    </span>
+                  </a>
+
+                  <ul class="sub-menu" aria-expanded="false">
+                    <li>
+                      <a href="system_setting.html">
+                      اعدادات النظام
+                      </a>
+                    </li>
+                    <li>
+                      <a href="paymentmethod.html">
+                        طرق الدفع 
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ordertype.html">
+                       نوع الطلب
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="fas fa-file"></i>
+
+                    <span>
+                    التقارير
+                    </span>
+                  </a>
+
+                   <ul class="sub-menu" aria-expanded="false">
+                    <li>
+                      <a href="general_report.html">
+                        التقرير العام
+                      </a>
+                    </li>
+                    <li>
+                      <a href="general-cost-report.html">
+                        تقرير التكلفة العامة
+                      </a>
+                    </li>
+                    <li>
+                      <a href="expired-products-report.html">
+                        تقرير منتجات منتهية الصلاحية
+                      </a>
+                    </li>
+                    <li>
+                      <a href="near-expired-products-report.html">
+                        تقرير المنتجات التي قاربت على الانتهاء
+                      </a>
+                    </li>
+                    <li>
+                      <a href="top-selling-products-report.html">
+                        تقرير المنتجات الأعلى مبيعاً
+                      </a>
+                    </li>
+                    <li>
+                      <a href="shift-report.html">
+                        تقرير الورديات
+                      </a>
+                    </li>
+                    <li>
+                      <a href="orders.html">
+                        الطلبات
+                      </a>
+                    </li>
+                    <li>
+                      <a href="credit-sale-accounts-report.html">
+                      تقرير البيع بالآجل
+                      </a>
+                    </li>
+                    <li>
+                      <a href="customer-report.html">
+                        تقرير العملاء
+                      </a>
+                    </li>
+                    <li>
+                      <a href="retail-report.html">
+                        تقرير التجزئة
+                      </a>
+                    </li>
+                    <li>
+                      <a href="point-of-sale-report.html">
+                        تقرير البيع
+                      </a>
+                    </li>
+                    <li>
+                      <a href="sold-products.html">
+                        المنتجات المباعة
+                      </a>
+                    </li>
+                    <li>
+                      <a href="daily-sold-products.html">
+                        المنتجات المباعة يومياً
+                      </a>
+                    </li>
+                    <li>
+                      <a href="pending-ordrs-report.html">
+                        طلبات قيد التنفيذ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tax-report.html">
+                        تقرير الضرائب
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Sidebar -->
+          </div>
+      </div>
+      <!-- Left Sidebar End -->
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <div class="page-title-box d-flex align-items-center justify-content-between">
+                  <h4 class="mb-0 primary-color">
+                    تعديل  منتج جديد 
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-12 mb-4">
+                <form class="form-contain">
+                  <div class="row">
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            صوره المنتج :-
+                          </span>
+                        </label>
+    
+                        <input type="file"/>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            اسم المنتج بالعربيه
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اسم المنتج بالعربيه" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            اسم المنتج بالانجليزيه
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اسم المنتج بالانجليزيه" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            الرمز التسلسل(barcode)
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder=" الرمز التسلسل" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            التصنيفات
+                          </span>
+                        </label>
+
+                        <select class="form-control">
+                          <option value="">
+                            ساندوتش  
+                          </option>
+
+                          <option value="">
+                            مشروبات
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            امكانيه النفاذ
+                          </span>
+                        </label>
+
+                        <select class="form-control">
+                          <option value="">
+                            نعم  
+                          </option>
+
+                          <option value="">
+                            لا
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            امكانيه البيع
+                          </span>
+                        </label>
+
+                        <select class="form-control">
+                          <option value="">
+                            نعم  
+                          </option>
+
+                          <option value="">
+                            لا
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                      <div class="page-title-box d-flex align-items-center justify-content-between">
+                        <h4 class="mb-0 primary-color">
+                          بيانات المنتج
+                        </h4>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            الضريبه %
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="2" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            التكلفه
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="التكلفه" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            الوزن
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="الوزن" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            السعرات الحرارايه
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="السعرات الحرارايه" />
+                      </div>
+                    </div>
+                    
+                    <div class="col-12 mb-4">
+                      <div class="page-title-box d-flex align-items-center justify-content-between">
+                        <h4 class="mb-0 primary-color">
+                          الكميه 
+                        </h4>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            نقاط البيع	
+                          </span>
+                        </label>
+
+                        <select class="form-control">
+                          <option value="">
+                            كاشير 1  
+                          </option>
+
+                          <option value="">
+                            كاشير 2
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            مسمي الكميه	
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اكتب هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            الكميه
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اكتب هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mb-3">
+                      <div class="form-group">
+                        <label>
+                          <span>
+                            سعر البيع	
+                          </span>
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="اكتب هنا" />
+                      </div>
+                    </div>
+
+                    <div class="col-4 ml-auto mt-3">
+                      <button type="button" class="btn-primary-shape">
+                        <span>
+                          اضافة كميات نقطه بيع اخري 
+                        </span>
+                      </button>
+                    </div>
+                    
+
+                    <div class="col-12 mt-3">
+                      <button type="button" class="btn-primary-shape" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fas fa-pen"></i>
+
+                        <span>
+                          تعديل البيانات
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="assets/images/check_icon.svg" alt="" />
+
+            <h4>
+              تم اضافة بيانات العميل بنجاح
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/pages/dashboard.init.js"></script>
+    <!-- apexcharts init -->
+    <script src="assets/js/pages/apexcharts.init.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

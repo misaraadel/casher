@@ -766,6 +766,14 @@ a {
           margin-inline-end: 2px;
 }
 
+.icon-table {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .box, .card {
   width: 100%;
   padding: 20px 15px;
