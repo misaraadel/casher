@@ -1859,6 +1859,162 @@ a {
   border: 1px solid rgba(0, 139, 210, 0.4);
 }
 
+.cook .box {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0px !important;
+  background-color: #fff;
+}
+
+.cook .box .order-type {
+  width: 100%;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cook .box .order-type .number, .cook .box .order-type .type {
+  width: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cook .box .order-type.green {
+  background-color: #469248;
+}
+
+.cook .box .order-type.blue {
+  background-color: #008BD2;
+}
+
+.cook .box .order-type.red {
+  background-color: #D11F1F;
+}
+
+.cook .box .users {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.cook .box .users .flex-data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.cook .box .users .flex-data h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #008BD2;
+}
+
+.cook .box .users .flex-data h4 i {
+  color: rgba(0, 139, 210, 0.5);
+  font-size: 15px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+
+.cook .box .users .heading-data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px 0px;
+}
+
+.cook .box .users .heading-data i {
+  font-size: 15px;
+}
+
+.cook .box .users .btn {
+  color: #000;
+  font-size: 15px;
+}
+
+.cook .box .users .btn:hover, .cook .box .users .btn:focus {
+  text-decoration: none;
+}
+
+.cook .box .users .list {
+  width: 100%;
+  padding: 10px 15px;
+  list-style: none;
+  border-top: 1px solid #ddd;
+}
+
+.cook .box .users .list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 6px 0px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.cook .box .users .list li span {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cook .box .users .list li span:first-child {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  color: #2A2A2A;
+}
+
+.cook .box .btn-primary-shape {
+  width: 100% !important;
+}
+
 .menu {
   width: 100%;
   background-color: #FBF8F8;
@@ -3415,7 +3571,8 @@ a {
 .dark-mode .dropdown-item span, .dark-mode .menu .proucts-contain .product-box h4,
 .dark-mode .dropdown-item i, .dark-mode .menu .menu-list .payment,
 .dark-mode .casher-box h4, .dark-mode .menu .menu-list .data-list li .content h4,
-.dark-mode .casher-box .data li span, .dark-mode .dark-color,
+.dark-mode .casher-box .data li span, .dark-mode .dark-color, .dark-mode .cook .box .users .btn,
+.dark-mode .cook .box .users .heading-data i, .dark-mode .cook .box .users .list li span,
 .dark-mode .form-contain .wrapper .radio-title, .dark-mode .login .form-data .links a,
 .dark-mode .modal-body h4 {
   color: #fff !important;
@@ -3431,7 +3588,8 @@ a {
 .dark-mode .dropdown-item span, .dark-mode .menu .proucts-contain .product-box h4,
 .dark-mode .dropdown-item i, .dark-mode .menu .menu-list .payment,
 .dark-mode .casher-box h4, .dark-mode .menu .menu-list .data-list li .content h4,
-.dark-mode .casher-box .data li span, .dark-mode .dark-color,
+.dark-mode .casher-box .data li span, .dark-mode .dark-color, .dark-mode .cook .box .users .btn,
+.dark-mode .cook .box .users .heading-data i, .dark-mode .cook .box .users .list li span,
 .dark-mode .form-contain .wrapper .radio-title, .dark-mode .login .form-data .links a,
 .dark-mode .modal-body h4 {
   color: #fff !important;
@@ -3447,7 +3605,8 @@ a {
 .dark-mode .dropdown-item span, .dark-mode .menu .proucts-contain .product-box h4,
 .dark-mode .dropdown-item i, .dark-mode .menu .menu-list .payment,
 .dark-mode .casher-box h4, .dark-mode .menu .menu-list .data-list li .content h4,
-.dark-mode .casher-box .data li span, .dark-mode .dark-color,
+.dark-mode .casher-box .data li span, .dark-mode .dark-color, .dark-mode .cook .box .users .btn,
+.dark-mode .cook .box .users .heading-data i, .dark-mode .cook .box .users .list li span,
 .dark-mode .form-contain .wrapper .radio-title, .dark-mode .login .form-data .links a,
 .dark-mode .modal-body h4 {
   color: #fff !important;
@@ -3463,7 +3622,8 @@ a {
 .dark-mode .dropdown-item span, .dark-mode .menu .proucts-contain .product-box h4,
 .dark-mode .dropdown-item i, .dark-mode .menu .menu-list .payment,
 .dark-mode .casher-box h4, .dark-mode .menu .menu-list .data-list li .content h4,
-.dark-mode .casher-box .data li span, .dark-mode .dark-color,
+.dark-mode .casher-box .data li span, .dark-mode .dark-color, .dark-mode .cook .box .users .btn,
+.dark-mode .cook .box .users .heading-data i, .dark-mode .cook .box .users .list li span,
 .dark-mode .form-contain .wrapper .radio-title, .dark-mode .login .form-data .links a,
 .dark-mode .modal-body h4 {
   color: #fff !important;
@@ -3556,6 +3716,12 @@ a {
 
 .dark-mode input[type="file"] {
   color: #fff;
+}
+
+.dark-mode .cook .box .users .flex-data,
+.dark-mode .cook .box .users .list,
+.dark-mode .cook .box .users .list li {
+  border-color: #444;
 }
 
 @media (max-width: 999px) {

@@ -889,6 +889,127 @@
 
 }
 
+.cook {
+    .box {
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0px !important;
+        background-color: #fff;
+
+        .order-type {
+            width: 100%;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+
+            .number, .type{
+                width: 100px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                background-color: rgba($color: #fff, $alpha: .1);
+                border-radius: 10px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &.green {
+                background-color: #469248;
+            }
+
+            &.blue {
+                background-color: #008BD2;
+            }
+
+            &.red {
+                background-color: #D11F1F;
+            }
+        }
+
+        .users {
+            width: 100%;
+            padding: 10px 15px;
+
+            .flex-data {
+                width: 100%;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #ddd;
+
+                h4 {
+                    font-size: 17px;
+                    font-weight: 700;
+                    color: #008BD2;
+
+                    i {
+                        color: rgba($color: #008BD2, $alpha: .5);
+                        font-size: 15px;
+                        margin-inline-end: 5px;
+                    }
+                }
+            }
+            .heading-data {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: space-between;
+                padding: 10px 0px 0px;
+
+                i {
+                    font-size: 15px;
+                }
+            }
+            .btn {
+                color: #000;
+                font-size: 15px;
+
+                &:hover, &:focus {
+                    text-decoration: none;
+                }
+            }
+
+            .list {
+                width: 100%;
+                padding: 10px 15px;
+                list-style: none;
+                border-top: 1px solid #ddd;
+                
+                li {
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    padding: 6px 0px;
+                    border-bottom: 1px solid #f7f7f7;
+
+                    span {
+                        &:first-child {
+                            margin-inline-end: 10px;
+                            color: #2A2A2A;
+                        }
+
+                        color: #000;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .btn-primary-shape {
+            width: 100% !important;
+        }
+    }
+}
+
 .menu {
     width: 100%;
     background-color: #FBF8F8;
@@ -2141,7 +2262,8 @@
     .dropdown-item span,.menu .proucts-contain .product-box h4,
     .dropdown-item i , .menu .menu-list .payment,
     .casher-box h4 , .menu .menu-list .data-list li .content h4,
-    .casher-box .data li span ,.dark-color ,
+    .casher-box .data li span ,.dark-color ,.cook .box .users .btn ,
+    .cook .box .users .heading-data i ,.cook .box .users .list li span,
     .form-contain .wrapper .radio-title , .login .form-data .links a,
     .modal-body h4{
         color: #fff !important;
@@ -2189,6 +2311,12 @@
 
     input[type="file"] {
         color: #fff;
+    }
+
+    .cook .box .users .flex-data,
+    .cook .box .users .list,
+    .cook .box .users .list li{
+        border-color: #444;
     }
 }
 
