@@ -1276,8 +1276,7 @@ a {
 }
 
 .small-invoice {
-  width: 100mm;
-  height: 100%;
+  width: 297MM;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1290,12 +1289,10 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px 0px;
-  margin: auto;
 }
 
 .small-invoice .content {
-  width: 100mm;
-  height: 100%;
+  width: 297MM;
   padding: 20px 10px;
   border: 1px solid rgba(0, 139, 210, 0.5);
   border-radius: 20px;
