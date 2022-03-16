@@ -32,14 +32,14 @@
             -webkit-box-pack: center;
                 -ms-flex-pack: center;
                     justify-content: center;
-            padding: 20px 0px;
+            padding: 10px 0px;
             direction: rtl;
           }
 
           .small-invoice .content {
             width: 44mm;
-            padding: 20px 10px;
-            border: 1px solid rgba(0, 139, 210, 0.5);
+            padding: 10px 10px;
+            border: 2px solid rgba(0, 139, 210, 0.5);
             border-radius: 20px;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -63,14 +63,21 @@
             height: 40px;
             -o-object-fit: contain;
               object-fit: contain;
-            margin: 0px 0px 10px 0px;
+            margin: 0px 0px 5px 0px;
           }
 
           .small-invoice .content h4 {
             color: #333;
             font-size: .9em;
             text-align: center;
-            margin: 0px 0px 10px 0px;
+            margin: 0px 0px 5px 0px;
+          }
+
+          .small-invoice .content h3 {
+            font-size: .5em;
+            color: #333;
+            text-align: center;
+            margin: 0px 0px 5px 0px;
           }
 
           .small-invoice .content h2 {
@@ -82,17 +89,18 @@
 
           .small-invoice .content .table-contain {
             overflow: hidden !important;
-            padding: 10px 0px 0px 0px !important;
-            border-top: 1px dashed rgba(0, 139, 210, 0.5);
-            border-bottom: 1px dashed rgba(0, 139, 210, 0.5);
+            padding: 5px 0px 0px 0px !important;
+            border-top: 2px dashed rgba(0, 139, 210, 0.5);
+            border-bottom: 2px dashed rgba(0, 139, 210, 0.5);
           }
 
           .small-invoice .content .table-contain .table th, .small-invoice .content .table-contain .table td {
             min-width: unset !important;
-            padding: 10px 0px !important;
+            padding: 5px 0px !important;
             font-size: .5em !important;
             border: 0px !important;
             vertical-align: top;
+            text-align: center;
           }
 
           .small-invoice .content .barcode {
@@ -122,26 +130,34 @@
       <div class="small-invoice">
         <div class="content">
           <img src="assets/images/icon.png" class="logo" alt="">
+          
+          <h4>
+            اسم التاجر
+          </h4>
 
           <h4>
             فاتورة ضريبية مبسطة 
           </h4>
 
-          <h4>
+          <h3>
             simplified tax invoice 
-          </h4>
+          </h3>
 
           <div class="table-contain" style="border-bottom: 0px;">
             <table class="table">
               <tbody>
                 <tr>
                   <th>
-                    اسم التاجر
+                    اسم العميل
                   </th>
 
                   <td>
                     محمد احمد
                   </td>
+
+                  <th>
+                    customer name
+                  </th>
                 </tr>
                 <tr>
                   <th>
@@ -150,6 +166,10 @@
                   <td>
                     300036681800003
                   </td>
+
+                  <th>
+                    Tax Number
+                  </th>
                 </tr>
 
                 <tr>
@@ -159,6 +179,9 @@
                   <td>
                     12/12/2020 
                   </td>
+                  <th>
+                    Date 
+                  </th>
                 </tr>
 
                 <tr>
@@ -168,6 +191,10 @@
                   <td>
                     123123
                   </td>
+
+                  <th>
+                    invoice number
+                  </th>
                 </tr>
               </tbody>
             </table>
@@ -416,6 +443,15 @@
           <div class="table-contain" style="border-bottom: 0px;">
             <table class="table">
               <tbody>
+                <tr>
+                  <th style="text-align: unset;">
+                    رقم الطاولة
+                  </th>
+                  
+                  <td style="text-align: unset;">
+                    2
+                  </td>
+                </tr>
                 <tr>
                   <td>
                     يشترط عند الاستبدال إحضار الفاتوره بسبب تطبيق ضريبه القيمه
