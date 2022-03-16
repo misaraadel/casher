@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+
+        <title>
+        نظام ربط للفواتير
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+          :root{
+            --primary: #008BD2;
+            --secondary: #FECC00;
+          }
+          body , html {
+            margin: 0px;
+            box-sizing: border-box;
+          }
+          
+          @media print {
+            .page-break { display: block; page-break-before: always; }
+          }
+
+          .small-invoice {
+            width: 80mm;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -ms-flex-line-pack: center;
+                align-content: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            direction: rtl;
+          }
+
+          .small-invoice .content {
+            width: 80mm;
+            padding: 10px 10px;
+            border: 2px solid rgba(0, 139, 210, 0.5);
+            border-radius: 20px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -ms-flex-line-pack: center;
+                align-content: center;
+          }
+
+          .small-invoice .content .logo {
+            width: 120px;
+            height: 40px;
+            -o-object-fit: contain;
+              object-fit: contain;
+            margin: 0px 0px 5px 0px;
+          }
+
+          .small-invoice .content h4 {
+            color: #333;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 0px 0px 5px 0px;
+          }
+
+          .small-invoice .content h3 {
+            font-size: .7em;
+            color: #333;
+            text-align: center;
+            margin: 0px 0px 5px 0px;
+          }
+
+          .small-invoice .content h2 {
+            color: #008BD2;
+            font-size: 1.2em;
+            font-weight: 500;
+            text-align: center;
+          }
+
+          .small-invoice .content .table-contain {
+            overflow: hidden !important;
+            padding: 5px 0px 0px 0px !important;
+            border-top: 2px dashed rgba(0, 139, 210, 0.5);
+            border-bottom: 2px dashed rgba(0, 139, 210, 0.5);
+            width: 100%;
+          }
+
+          table {
+            width: 100%;
+          }
+
+          .small-invoice .content .table-contain .table th, .small-invoice .content .table-contain .table td {
+            min-width: unset !important;
+            padding: 5px 0px !important;
+            font-size: .8em !important;
+            border: 0px !important;
+            vertical-align: top;
+            text-align: center;
+            font-weight: bold;
+          }
+
+          .small-invoice .content .table-contain .table td {
+            font-size: .7em !important;
+            vertical-align: middle;
+          }
+
+          .small-invoice .content .barcode {
+            width: 100%;
+            height: 60px;
+            -o-object-fit: contain;
+              object-fit: contain;
+            -o-object-position: center;
+              object-position: center;
+            border-bottom: 1px dashed rgba(0, 139, 210, 0.5);
+            padding-bottom: 10px;
+          }
+
+          .small-invoice .content .qr-code {
+            width: 90px;
+            height: 90px;
+            -o-object-fit: contain;
+              object-fit: contain;
+            -o-object-position: center;
+              object-position: center;
+          }
+
+        </style>
+    </head>
+
+    <body style="background-color: #fff !important;">
+      <div class="small-invoice">
+        <div class="content">
+          <img src="assets/images/icon.png" class="logo" alt="">
+          
+          <h4>
+            اسم التاجر
+          </h4>
+
+          <h4>
+            فاتورة ضريبية مبسطة 
+          </h4>
+
+          <h3>
+            simplified tax invoice 
+          </h3>
+
+          <div class="table-contain" style="border-bottom: 0px;">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th>
+                    اسم العميل
+                  </th>
+
+                  <td>
+                    محمد احمد
+                  </td>
+
+                  <th>
+                    customer name
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    الرقم الضريبي 
+                  </th>
+                  <td>
+                    300036681800003
+                  </td>
+
+                  <th>
+                    Tax Number
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>
+                    التاريخ 
+                  </th>
+                  <td>
+                    12/12/2020 
+                  </td>
+                  <th>
+                    Date 
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>
+                    رقم الفاتوره 
+                  </th>
+                  <td>
+                    123123
+                  </td>
+
+                  <th>
+                    invoice number
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-contain">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    #
+                  </th>
+
+                  <th style="width: 120px;">
+                    <span>
+                      توصيف السلعة  والخدمات 
+                    </span>
+
+                    <br>
+                    
+                    product name 
+                  </th>
+
+                  <th style="width: 40px;">
+                    سعر الخدمة 
+                    <br>
+                    price 
+                  </th>
+
+
+                  <th>
+                    الكمية 
+                    <br>
+                    
+                    Quantity
+                  </th>
+
+                  <th>
+                    المجموع شامل الضريبة 
+
+                    <br/>
+
+                    Total Tax
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    1
+                  </td>
+                  
+                  <td>	
+                    <p>
+                      item 1 
+                    </p>
+
+                    <p>
+                      item 1 
+                    </p>
+                  </td>
+
+                  <td>
+                    200 ر.س 
+                  </td>
+
+                  <td>
+                    1
+                  </td>
+
+                  <td>
+                    200 ر.س 
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    1
+                  </td>
+                  
+                  <td>	
+                    item 1 
+                  </td>
+
+                  <td>
+                    200 ر.س 
+                  </td>
+
+                  <td>
+                    1
+                  </td>
+
+                  <td>
+                    200 ر.س 
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    اجمالي المبلغ غير شامل ضريبية القيمة المضافة
+                  </td>
+
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    200 ر.س 
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    total amount 
+                  </td>
+
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    200 ر.س 
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    مجموع ضريبية القيمة المضافة 
+                  </td>
+
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    200 ر.س 
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    Total VAT   
+                  </td>
+
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    200 ر.س 
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    اجمالي المبلغ 
+                  </td>
+
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    200 ر.س 
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    Total Amount
+                  </td>
+
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
+                    200 ر.س 
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <img src="https://t3.ftcdn.net/jpg/02/55/97/94/360_F_255979498_vewTRAL5en9T0VBNQlaDBoXHlCvJzpDl.jpg" class="barcode" alt="">
+
+          <img src="https://i.stack.imgur.com/YLy3V.png" class="qr-code" alt="">
+
+          <div class="table-contain" style="border-bottom: 0px;">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th style="text-align: unset;">
+                    رقم الطاولة
+                  </th>
+                  
+                  <td style="text-align: unset;">
+                    2
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    يشترط عند الاستبدال إحضار الفاتوره بسبب تطبيق ضريبه القيمه
+                    المضافه خلال 7 ايام من تاريخ الفاتوره وخلال 3 ايام أثناء فترات
+                    العروض والتخفيضات على ان تكون مصحوبه بالعلبه والفاتوره
+                    وغير مستخدمه
+                  </td>
+                </tr>
+
+                <!-- <tr>
+                  <td>
+                    غير مسموح باستبدال او استرجاع أحذيه السهرة والكعب العالي
+                  </td>
+                </tr> -->
+                
+                <!-- <tr>
+                  <td>
+                    غير مسموح باسترجاع البضاعه واستبدال قيمتها نقدا خلال
+                    سريان العروض والتخفيضات
+                  </td>
+                </tr> -->
+<!-- 
+                <tr>
+                  <td>
+                    غير مسموح باسترجاع قيمه البضاعه نقدا او استبدالها في حال
+                    الدفع عبر البطاقات الائتمانيه )فيزا - ماستر كارد - أميركان
+                    اكسبريس( الا بعد 3 ايام من تاريخ الفاتوره .
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    اثناء فتره العروض الترويجيه : عند الاستبدال أو الاسترجاع يجب
+                    ارجاع كامل البضاعه الموجوده بالفاتوره .
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Replacement or return is required to bring the invoice due 
+                    to the application of the VAT Allowed within 7 days from date
+                    of purchase within 3 days during the periods of Promotion
+                    and discounts, provided that it is accompanied by the
+                    .package and the invoice and is not used
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Refund or exchange is NOT allowed for Part/Evening shoes 
+                    and bags and high heel shoes on promotion , you should
+                    .return all promo`s items
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    The Replacement value of cash it`s not allowed to return 
+                    items which is tendered by Credit Card (Visa - Master card -
+                    Amex) Can returned by cash or replaced only after 3 dayes
+                    . from the date of bill
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Items should be unused , in their original condition , with 
+                    . original receipt & Box
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    During the Promotional offer period when replacing and
+                    . retrieving all the goods in the invoice must be returned
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
