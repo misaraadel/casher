@@ -43,9 +43,3 @@
         text-align: center;
     }
 }
-
-@media print {
-    .small-invoice {
-        width: 80mm;
-    }
-}
