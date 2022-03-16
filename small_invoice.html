@@ -8,7 +8,7 @@
         <title>
         نظام ربط للفواتير
         </title>
-
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
         <style>
           :root{
             --primary: #008BD2;
@@ -92,6 +92,11 @@
             padding: 5px 0px 0px 0px !important;
             border-top: 2px dashed rgba(0, 139, 210, 0.5);
             border-bottom: 2px dashed rgba(0, 139, 210, 0.5);
+            width: 100%;
+          }
+
+          table {
+            width: 100%;
           }
 
           .small-invoice .content .table-contain .table th, .small-invoice .content .table-contain .table td {
@@ -101,6 +106,12 @@
             border: 0px !important;
             vertical-align: top;
             text-align: center;
+            font-weight: bold;
+          }
+
+          .small-invoice .content .table-contain .table td {
+            font-size: .3em !important;
+            vertical-align: middle;
           }
 
           .small-invoice .content .barcode {
@@ -218,7 +229,7 @@
                     product name 
                   </th>
 
-                  <th>
+                  <th style="width: 40px;">
                     سعر الخدمة 
                     <br>
                     price 
@@ -233,7 +244,7 @@
                   </th>
 
                   <th>
-                    المجموع شامل الضريبة القيمة المضافة 
+                    المجموع شامل الضريبة 
 
                     <br/>
 
@@ -290,145 +301,61 @@
                     200 ر.س 
                   </td>
                 </tr>
-                <tr>
-                  <td>
-                    1
-                  </td>
-                  
-                  <td>	
-                    item 1 
-                  </td>
-
-                  <td>
-                    200 ر.س 
-                  </td>
-
-                  <td>
-                    1
-                  </td>
-
-                  <td>
-                    200 ر.س 
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    1
-                  </td>
-                  
-                  <td>	
-                    item 1 
-                  </td>
-
-                  <td>
-                    200 ر.س 
-                  </td>
-
-                  <td>
-                    1
-                  </td>
-
-                  <td>
-                    200 ر.س 
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    1
-                  </td>
-                  
-                  <td>	
-                    item 1 
-                  </td>
-
-                  <td>
-                    200 ر.س 
-                  </td>
-
-                  <td>
-                    1
-                  </td>
-
-                  <td>
-                    200 ر.س 
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    1
-                  </td>
-                  
-                  <td>	
-                    item 1 
-                  </td>
-
-                  <td>
-                    200 ر.س 
-                  </td>
-
-                  <td>
-                    1
-                  </td>
-
-                  <td>
-                    200 ر.س 
-                  </td>
-                </tr>
               </tbody>
             </table>
             <table class="table">
               <tbody>
                 <tr>
-                  <td class="text-left">
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     اجمالي المبلغ غير شامل ضريبية القيمة المضافة
                   </td>
 
-                  <td>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     200 ر.س 
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-left">
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     total amount 
                   </td>
 
-                  <td>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     200 ر.س 
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-left">
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     مجموع ضريبية القيمة المضافة 
                   </td>
 
-                  <td>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     200 ر.س 
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-left">
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     Total VAT   
                   </td>
 
-                  <td>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     200 ر.س 
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-left">
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     اجمالي المبلغ 
                   </td>
 
-                  <td>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     200 ر.س 
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-left">
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     Total Amount
                   </td>
 
-                  <td>
+                  <td style="text-align: unset; padding: 2px 0px  !important;">
                     200 ر.س 
                   </td>
                 </tr>
@@ -461,19 +388,19 @@
                   </td>
                 </tr>
 
-                <tr>
+                <!-- <tr>
                   <td>
                     غير مسموح باستبدال او استرجاع أحذيه السهرة والكعب العالي
                   </td>
-                </tr>
+                </tr> -->
                 
-                <tr>
+                <!-- <tr>
                   <td>
                     غير مسموح باسترجاع البضاعه واستبدال قيمتها نقدا خلال
                     سريان العروض والتخفيضات
                   </td>
-                </tr>
-
+                </tr> -->
+<!-- 
                 <tr>
                   <td>
                     غير مسموح باسترجاع قيمه البضاعه نقدا او استبدالها في حال
@@ -528,7 +455,7 @@
                     During the Promotional offer period when replacing and
                     . retrieving all the goods in the invoice must be returned
                   </td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div>
