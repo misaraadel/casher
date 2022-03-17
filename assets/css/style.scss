@@ -662,6 +662,10 @@
     padding: 20px 15px;
     background-color: #fff;
     box-shadow: 0px 0px 30px rgba($color: #000000, $alpha: 0.04);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 
     .content {
         display: flex;
@@ -1182,9 +1186,13 @@
     background-color: #FBF8F8;
 
     .menu-list {
-        width: 100%;
+        width: 382px;
+        height: calc(100vh - 116px);
         padding-top: 0px;
-        position: sticky;
+        position: fixed;
+        bottom: 0;
+        right:  0;
+        z-index: 999;
         background-color: #fff;
         
         .data-list {
@@ -1243,9 +1251,17 @@
             }
         }
 
+        .data-sheet {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999 !important;
+        }
+
         .bill-contain {
             width: 100%;
-            padding: 0px 20px;
+            padding: 10px 20px 0px;
             background-color: #fff;
 
             .bill-shape {
@@ -1439,8 +1455,7 @@
             font-size: 18px;
             font-weight: 900;
             line-height: 22px;
-            margin-top: 24px;
-            margin-bottom: 0px;
+            margin: 12px 0px !important;
         }
 
         .button-contain {
@@ -1538,6 +1553,7 @@
             align-items: center;
             align-content: center;
             justify-content: center;
+            margin-top: 12px;
         }
     }
 
@@ -1593,6 +1609,7 @@
         height: 123vh;
         overflow-y: scroll;
         overflow-x: hidden;
+        padding-top: 130px;
 
         &::-webkit-scrollbar-thumb,
         &::-webkit-scrollbar-track,
@@ -1821,6 +1838,155 @@
             color: #fff;
             font-size: 15px;
             font-weight: 700;
+        }
+    }
+}
+
+.calcModal {
+    width: 311px !important;
+
+    .modal-body {
+        padding: 20px !important;
+    }
+}
+
+.calulate {
+    width: 100%;
+    background-color: #fff;
+    margin: 0px !important;
+    padding: 20px 18px 10px !important;
+    border-radius: 6px !important;
+
+    .plus-men-buttons {
+        width: 50px;
+        height: 169px;
+        background-color: #7C0E6F;
+        border-radius: 6px;
+        padding: 10px 8px;
+
+        a {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+
+            img {
+                width: 35px;
+                height: 35px;
+                object-fit: contain;
+                margin: 0px !important;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: rgba($color: #FFFFFF, $alpha: 0.10);
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+
+            &:hover {
+                img {
+                    animation: pulse .3s linear;
+                }
+            }
+        }
+    }
+
+    .delete-product {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color: #D11F1F;
+        border-radius: 6px;
+        margin-top: 10px;
+
+        img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            margin: 0px !important;
+        }
+
+        &:hover {
+            img {
+                animation: pulse .3s linear;
+            }
+        }
+    }
+
+    .flex-number {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .number-btn {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #008BD2;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            color: #008BD2;
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 24px;
+            border-radius: 6px;
+            margin-inline-end: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #008BD2;
+                color: #fff;
+            }
+        }
+
+        .equal-btn {
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border-radius: 6px;
+            background-color: #008BD2;
+            margin-inline-end: 5px;
+            margin-bottom: 10px;
+
+            img {
+                width: 12px;
+                height: 12px;
+                object-fit: contain;
+                object-position: center;
+                margin: 0px !important;
+            }
+
+            &:hover {
+                img {
+                    animation: pulse .3s linear;
+                }
+            }
         }
     }
 }
@@ -2418,7 +2584,7 @@
 
     #page-topbar, .bg-ligt, .box, .card, .dropdown-menu ,
     .casher-box , .casher-nav, .menu .menu-list,
-    .form-contain .form-group .form-control ,.menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .number-btn ,
+    .form-contain .form-group .form-control ,.calulate .flex-number .number-btn ,
     .menu .menu-list .bill-contain, .profile-card, 
     .menu .proucts-contain .product-box ,
     .profile-card .image-content ,
@@ -2447,7 +2613,7 @@
     }
 
     .main-content, .menu .menu-list .button-contain .small-btn ,
-    .menu .menu-list .bill-contain .bill-shape li.calulate ,
+    .calulate ,
     .menu .proucts-contain .product-box .button-contain a ,
     .login ,  .dropdown-menu .form-group .form-control, 
     .login .form-data .form-contain ,
@@ -2550,7 +2716,7 @@
     }
 
     .menu .offers-list {
-        top: 226px !important;
+        top: 163px  !important;
     }
 
 
@@ -2594,10 +2760,10 @@
         }
     }
 
-    .bill-shape li.calulate .flex-number .number-btn {
+    .calulate .flex-number .number-btn {
         width: 55px !important;
     }
-    .menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .equal-btn {
+    .calulate .flex-number .equal-btn {
         width: 113px !important;
     }
 

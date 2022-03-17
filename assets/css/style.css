@@ -1565,6 +1565,10 @@ a {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .casher-nav .content {
@@ -2244,10 +2248,13 @@ a {
 }
 
 .menu .menu-list {
-  width: 100%;
+  width: 382px;
+  height: calc(100vh - 116px);
   padding-top: 0px;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
   background-color: #fff;
 }
 
@@ -2307,9 +2314,17 @@ a {
   margin: 0px;
 }
 
+.menu .menu-list .data-sheet {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999 !important;
+}
+
 .menu .menu-list .bill-contain {
   width: 100%;
-  padding: 0px 20px;
+  padding: 10px 20px 0px;
   background-color: #fff;
 }
 
@@ -2552,8 +2567,7 @@ a {
   font-size: 18px;
   font-weight: 900;
   line-height: 22px;
-  margin-top: 24px;
-  margin-bottom: 0px;
+  margin: 12px 0px !important;
 }
 
 .menu .menu-list .button-contain {
@@ -2683,6 +2697,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 12px;
 }
 
 .menu .buttons-contain {
@@ -2751,6 +2766,7 @@ a {
   height: 123vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-top: 130px;
 }
 
 .menu .proucts-contain::-webkit-scrollbar-thumb, .menu .proucts-contain::-webkit-scrollbar-track, .menu .proucts-contain::-webkit-scrollbar {
@@ -3039,6 +3055,197 @@ a {
   color: #fff;
   font-size: 15px;
   font-weight: 700;
+}
+
+.calcModal {
+  width: 311px !important;
+}
+
+.calcModal .modal-body {
+  padding: 20px !important;
+}
+
+.calulate {
+  width: 100%;
+  background-color: #fff;
+  margin: 0px !important;
+  padding: 20px 18px 10px !important;
+  border-radius: 6px !important;
+}
+
+.calulate .plus-men-buttons {
+  width: 50px;
+  height: 169px;
+  background-color: #7C0E6F;
+  border-radius: 6px;
+  padding: 10px 8px;
+}
+
+.calulate .plus-men-buttons a {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.calulate .plus-men-buttons a img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0px !important;
+}
+
+.calulate .plus-men-buttons a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.calulate .plus-men-buttons a:last-child::after {
+  display: none;
+}
+
+.calulate .plus-men-buttons a:hover img {
+  -webkit-animation: pulse .3s linear;
+          animation: pulse .3s linear;
+}
+
+.calulate .delete-product {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #D11F1F;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.calulate .delete-product img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0px !important;
+}
+
+.calulate .delete-product:hover img {
+  -webkit-animation: pulse .3s linear;
+          animation: pulse .3s linear;
+}
+
+.calulate .flex-number {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.calulate .flex-number .number-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #008BD2;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #008BD2;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  border-radius: 6px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.calulate .flex-number .number-btn:hover {
+  background-color: #008BD2;
+  color: #fff;
+}
+
+.calulate .flex-number .equal-btn {
+  width: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 6px;
+  background-color: #008BD2;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  margin-bottom: 10px;
+}
+
+.calulate .flex-number .equal-btn img {
+  width: 12px;
+  height: 12px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin: 0px !important;
+}
+
+.calulate .flex-number .equal-btn:hover img {
+  -webkit-animation: pulse .3s linear;
+          animation: pulse .3s linear;
 }
 
 .inovice-data-contain {
@@ -3792,7 +3999,7 @@ a {
 
 .dark-mode #page-topbar, .dark-mode .bg-ligt, .dark-mode .box, .dark-mode .card, .dark-mode .dropdown-menu,
 .dark-mode .casher-box, .dark-mode .casher-nav, .dark-mode .menu .menu-list,
-.dark-mode .form-contain .form-group .form-control, .dark-mode .menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .number-btn,
+.dark-mode .form-contain .form-group .form-control, .dark-mode .calulate .flex-number .number-btn,
 .dark-mode .menu .menu-list .bill-contain, .dark-mode .profile-card,
 .dark-mode .menu .proucts-contain .product-box,
 .dark-mode .profile-card .image-content,
@@ -3824,7 +4031,7 @@ a {
 }
 
 .dark-mode .main-content, .dark-mode .menu .menu-list .button-contain .small-btn,
-.dark-mode .menu .menu-list .bill-contain .bill-shape li.calulate,
+.dark-mode .calulate,
 .dark-mode .menu .proucts-contain .product-box .button-contain a,
 .dark-mode .login, .dark-mode .dropdown-menu .form-group .form-control,
 .dark-mode .login .form-data .form-contain,
@@ -4031,7 +4238,7 @@ a {
     display: none;
   }
   .menu .offers-list {
-    top: 226px !important;
+    top: 163px  !important;
   }
   .casher-nav {
     position: fixed;
@@ -4067,10 +4274,10 @@ a {
   .menu .proucts-contain .product-box .button-contain a span {
     font-size: 11px !important;
   }
-  .bill-shape li.calulate .flex-number .number-btn {
+  .calulate .flex-number .number-btn {
     width: 55px !important;
   }
-  .menu .menu-list .bill-contain .bill-shape li.calulate .flex-number .equal-btn {
+  .calulate .flex-number .equal-btn {
     width: 113px !important;
   }
   .login .form-contain {
