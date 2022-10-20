@@ -42,4 +42,12 @@
         min-width: 120px;
         text-align: center;
     }
+
+    .primary-box {
+        padding: 10px 5px;
+    }
+
+    .primary-box h4 {
+        font-size: 13px !important;
+    }
 }
