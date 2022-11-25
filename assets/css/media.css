@@ -50,4 +50,24 @@
     .primary-box h4 {
         font-size: 13px !important;
     }
+
+    .casher-box .data  {
+        flex-wrap: wrap;
+    }
+
+    .casher-box .casher-img {
+        width: 100%;
+        height: 180px;
+        border-radius: 0px !important;
+        border: 1px solid rgba(0, 139, 210, 0.2);
+        padding: 10px 0px 0px;
+    }
+
+    .casher-box .data li {
+        width: 49.5% !important;
+        padding: 10px 5px;
+        margin-bottom: 5px;
+        background-color: rgba(0, 139, 210, 0.05);
+        border: 1px solid rgba(0, 139, 210, 0.2);
+    }
 }

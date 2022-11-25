@@ -1472,8 +1472,8 @@ a {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .casher-box h4 {
   color: #000;
