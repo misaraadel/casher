@@ -385,169 +385,194 @@
               <div class="col-12 mb-4">
                 <div class="page-title-box d-flex align-items-center justify-content-between">
                   <h4 class="mb-0 primary-color">
-                    إعدادات نظام الولاء
+                    <i class="uil-money-withdrawal mx-2"></i>
+                    إعدادات نظام ولاء العملاء
                   </h4>
                 </div>
               </div>
 
               <div class="col-lg-12 col-12 mb-4">
                 <form class="form-contain">
-                  <div class="row">
-                    <div class="col-12 mb-3">
-                      <div class="d-flex align-items-center align-content-center">
-                        <span class="mx-2">
-                          مفعل
-                        </span>
-  
-                        <label for="" class="custom-check-box">
-                          <input type="checkbox" class="check-input" />
-        
-                          <span class="check-span"></span>
-                        </label>
-                      </div>
-                    </div>
-
-                    <div class="col-12 mb-4">
-                      <span class="mb-2">
-                        الوحدة الأساسية
+                  <div class="col-12 mb-3">
+                    <div class="d-flex align-items-center align-content-center">
+                      <span class="mx-2">
+                        مفعل
                       </span>
 
-                      <div class="buttons-contain">
-                        <a href="#" class="btn-link border-bk active">
-                          ريال 
-                        </a>
-  
-                        <a href="#" class="btn-link border-bk">
-                         نقطة
-                        </a>
-                      </div>
+                      <label for="" class="custom-check-box">
+                        <input type="checkbox" class="check-input" />
+      
+                        <span class="check-span"></span>
+                      </label>
                     </div>
+                  </div>
 
-                    <div class="col-lg-6 col-12 mb-3">
-                      <div class="form-group">
-                        <label>
-                          <span>
-                            النقود المكافأة للنقطة الواحدة *
-                          </span>
-                        </label>
+                  <div class="card mb-5">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <h4 class="mb-0 primary-color mb-5 text-center">
+                            إحتساب النقاط
+                          </h4>
+                        </div>
     
-                        <input type="text" class="form-control" placeholder="العنوان" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12 mb-4">
-                      <div class="profile-card py-2 px-3">
-                        <ul class="data" style="list-style: none;">
-                          <li class="mb-3">
-                            <i>
-                              1 نقطة
-                                = 
-                            </i>
-
-                            <span>
-                              15.151 ريال (مثال)
-                            </span>
-                          </li>
-
-                          <li>
-                            <i>
-                              1 نقطة
-                                = 
-                            </i>
-
-                            <span>
-                              15.151 ريال (مثال)
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="col-12 mb-3">
-                      <div class="d-flex align-items-center align-content-center">
-                        <span class="mx-2">
-                          لكل المنتجات
-                        </span>
-  
-                        <label for="" class="custom-check-box">
-                          <input type="checkbox" class="check-input" />
+                        <!-- <div class="col-12 mb-4">
+                          <span>
+                            الوحدة الأساسية
+                          </span>
+    
+                          <div class="buttons-contain">
+                            <a href="#" class="btn-link border-bk active" style="margin: 0px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;">
+                              ريال 
+                            </a>
+      
+                            <a href="#" class="btn-link border-bk" style="margin: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                             نقطة
+                            </a>
+                          </div>
+                        </div> -->
+    
+                        <div class="col-lg-6 col-12 mb-3">
+                          <div class="form-group">
+                            <label>
+                              <span>
+                                النقاط المكافإة لوحدة نقود واحدة
+                              </span>
+                            </label>
         
-                          <span class="check-span"></span>
-                        </label>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12 col-12 mb-3">
-                      <div class="form-group">
-                        <label>
-                          <span>
-                            للتصنيفات 
-                          </span>
-                        </label>
-
-                        <select class="form-control">
-                          <option value="">
-                            اختيار تصنيف   
-                          </option>
-
-                          <option value="">
-                            اختيار تصنيف  
-                          </option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12 mb-3">
-                      <div class="form-group">
-                        <label>
-                          <span>
-                            كم من النقاط تمثل وحدة نقود واحدة
-                          </span>
-                        </label>
+                            <input type="text" class="form-control" placeholder="50 نقطة" />
+                          </div>
+                        </div>
     
-                        <input type="text" class="form-control" placeholder="2" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12 mb-3">
-                      <div class="form-group">
-                        <label>
-                          <span>
-                            أقل عدد من النقاط للاستفادة *
-                          </span>
-                        </label>
+                        <div class="col-lg-6 col-12 mb-4">
+                          <div class="py-1 px-3 justify-content-center d-flex flex-column" style="margin-top: 40px;">
+                            <ul class="data justify-content-center h-100 d-flex flex-column" style="list-style: none;">
+                              <li class="mt-1">
+                                <i>
+                                 50 نقطة
+                                    = 
+                                </i>
     
-                        <input type="text" class="form-control" placeholder="2" />
+                                <span>
+                                  1 ريال (مثال)
+                                </span>
+                              </li>
+    
+                              <!-- <li>
+                                <i>
+                                  1 نقطة
+                                    = 
+                                </i>
+    
+                                <span>
+                                  15.151 ريال (مثال)
+                                </span>
+                              </li> -->
+                            </ul>
+                          </div>
+                        </div>
+    
+                        <div class="col-12 mb-3">
+                          <div class="d-flex align-items-center align-content-center">
+                            <span class="mx-2">
+                              لكل المنتجات
+                            </span>
+      
+                            <label for="" class="custom-check-box">
+                              <input type="checkbox" class="check-input" />
+            
+                              <span class="check-span"></span>
+                            </label>
+                          </div>
+                        </div>
+    
+                        <div class="col-lg-12 col-12">
+                          <div class="form-group">
+                            <label>
+                              <span>
+                                للتصنيفات 
+                              </span>
+                            </label>
+    
+                            <select class="form-control">
+                              <option value="">
+                                اختيار تصنيف   
+                              </option>
+    
+                              <option value="">
+                                اختيار تصنيف  
+                              </option>
+                            </select>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-12 mb-3">
-                      <div class="d-flex align-items-center align-content-center">
-                        <span class="mx-2">
-                          لأي عدد من النقاط
-                        </span>
-  
-                        <label for="" class="custom-check-box">
-                          <input type="checkbox" class="check-input" />
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <h4 class="mb-0 primary-color text-center mb-4">
+                            صرف النقاط
+                          </h4>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3">
+                          <div class="form-group">
+                            <label>
+                              <span>
+                                كم من النقاط تمثل وحدة نقود واحدة
+                              </span>
+                            </label>
         
-                          <span class="check-span"></span>
-                        </label>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12 col-12 mb-3">
-                      <div class="form-group">
-                        <label>
-                          <span>
-                            المضعفات 
-                          </span>
-                        </label>
+                            <input type="text" class="form-control" placeholder="2" />
+                          </div>
+                        </div>
     
-                        <input type="text" class="form-control" placeholder="2" />
+                        <div class="col-lg-4 col-12 mb-3">
+                          <div class="form-group">
+                            <label>
+                              <span>
+                                أقل عدد من النقاط للاستفادة *
+                              </span>
+                            </label>
+        
+                            <input type="text" class="form-control" placeholder="2" />
+                          </div>
+                        </div>
+    
+                        <div class="col-lg-4 col-12 mb-3">
+                          <div class="form-group">
+                            <label>
+                              <span>
+                                اقصى مبلغ  يمكن الإستفادة به
+                              </span>
+                            </label>
+        
+                            <input type="text" class="form-control" placeholder="2" />
+                          </div>
+                        </div>
+    
+                        <div class="col-12">
+                          <div class="d-flex align-items-center align-content-center">
+                            <span class="mx-2">
+                              لأي عدد من النقاط
+                            </span>
+      
+                            <label for="" class="custom-check-box">
+                              <input type="checkbox" class="check-input" />
+            
+                              <span class="check-span"></span>
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-12 mt-3">
+                  <div class="row">
+                    <div class="col-12 mt-5">
                       <button type="button" class="btn-primary-shape" data-toggle="modal" data-target="#exampleModal">
                         <i class="fas fa-pen"></i>
 
