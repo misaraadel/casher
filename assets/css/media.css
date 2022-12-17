@@ -70,4 +70,8 @@
         background-color: rgba(0, 139, 210, 0.05);
         border: 1px solid rgba(0, 139, 210, 0.2);
     }
+
+    .casher-box .data li span.list {
+        font-size: 11px !important;
+    }
 }
